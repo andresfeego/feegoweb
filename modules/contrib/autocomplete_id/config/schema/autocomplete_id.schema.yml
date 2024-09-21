@@ -1,0 +1,10 @@
+autocomplete_id.settings:
+  type: config_object
+  label: 'Entity autocomplete id settings'
+  mapping:
+    autocomplete_id_global:
+      type: boolean
+      label: 'Enable globally'
+
+field.widget.settings.entity_reference_autocomplete_id:
+  type: field.widget.settings.entity_reference_autocomplete

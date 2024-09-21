@@ -1,0 +1,25 @@
+field.widget.settings.entity_reference_modal:
+  type: mapping
+  label: Entity Modal widget settings
+  mapping:
+    add_new_button_title:
+      type: string
+      label: Add new button title
+    modal_form_mode:
+      type: string
+      label: Form mode of create
+    modal_width:
+      type: string
+      label: Modal width
+    modal_title:
+      type: string
+      label: Modal title
+    duplicate:
+      type: boolean
+      label: Duplicates allowed
+    search:
+      type: boolean
+      label: Add search button
+    bootstrap:
+      type: boolean
+      label: Load bootstrap cdn

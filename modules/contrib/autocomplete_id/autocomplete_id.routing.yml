@@ -1,0 +1,14 @@
+autocomplete_id.settings:
+  path: '/admin/config/content/autocomplete-id'
+  defaults:
+    _form: '\Drupal\autocomplete_id\Form\SettingsForm'
+    _title: 'Entity Autocomplete id settings'
+  requirements:
+    _permission: 'administer entity autocomplete id'
+autocomplete_id.entity_id_autocomplete:
+  path: '/entity_reference_autocomplete_id/{target_type}/{selection_handler}/{selection_settings_key}'
+  defaults:
+    _controller: '\Drupal\autocomplete_id\Controller\EntityIdAutocompleteController::handleAutocomplete'
+  requirements:
+    # Allow access to autocomplete route.
+    _access: 'TRUE'

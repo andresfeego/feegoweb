@@ -1,0 +1,12 @@
+name: 'Embed test'
+type: module
+description: 'Support module for the Embed module tests.'
+package: Testing
+dependencies:
+  - embed
+  - node
+
+# Information added by Drupal.org packaging script on 2024-08-10
+version: '8.x-1.9'
+project: 'embed'
+datestamp: 1723283821

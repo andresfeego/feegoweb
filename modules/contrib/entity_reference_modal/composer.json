@@ -1,0 +1,20 @@
+{
+  "name": "drupal/entity_reference_modal",
+  "description": "This module allows you create new entity with modal",
+  "type": "drupal-module",
+  "keywords": ["Drupal", "reference", "modal"],
+  "homepage": "https://www.drupal.org/project/entity_reference_modal",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/entity_reference_modal",
+    "source": "https://git.drupalcode.org/project/entity_reference_modal"
+  },
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "NGUYEN Bao",
+      "email": "n.bao@yahoo.com",
+      "homepage": "https://www.drupal.org/u/lazzyvn",
+      "role": "Maintainer"
+    }
+  ]
+}

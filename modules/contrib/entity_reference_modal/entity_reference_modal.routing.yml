@@ -1,0 +1,17 @@
+entity_reference_modal.entity_form:
+  path: '/entity-reference-modal/form/{entity_type}/{bundle}'
+  defaults:
+    _title: 'Entity Form'
+    _controller: '\Drupal\entity_reference_modal\Controller\EntityReferenceModalController::build'
+  requirements:
+    _custom_access: '\Drupal\entity_reference_modal\Controller\EntityReferenceModalController::access'
+
+entity_reference_modal.search:
+  path: '/entity-reference-modal/search/{target_type}/{selection_handler}/{selection_settings_key}'
+  defaults:
+    _controller: '\Drupal\entity_reference_modal\Controller\EntityReferenceModalController::fieldReference'
+    _format: json
+  methods: [GET]
+  requirements:
+    # Request from widget form search entity reference.
+    _access: 'TRUE'

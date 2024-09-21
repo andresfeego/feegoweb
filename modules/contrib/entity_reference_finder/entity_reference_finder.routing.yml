@@ -1,0 +1,7 @@
+entity_reference_finder.page:
+  path: '/admin/reports/entity_reference_finder'
+  defaults:
+    _form: '\Drupal\entity_reference_finder\Form\EntityReferenceFinderForm'
+    _title: 'Entity References Finder'
+  requirements:
+    _permission: 'access administration entityreferencefinder'

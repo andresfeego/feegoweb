@@ -1,0 +1,22 @@
+{
+  "name": "drupal/autocomplete_id",
+  "description": "Extends standard entity autocomplete. Allow users to see autocomplete results by entity id.",
+  "type": "drupal-module",
+  "keywords": ["Drupal", "Autocomplete"],
+  "homepage": "http://drupal.org/project/autocomplete_id",
+  "license": "GPL-2.0+",
+  "require": {
+    "drupal/core": "^9 || ^10 || ^11"
+  },
+  "authors": [
+    {
+      "name": "Volodymyr Mostepaniuk (mostepaniukvm)",
+      "homepage": "https://www.drupal.org/u/mostepaniukvm",
+      "role": "Maintainer"
+    }
+  ],
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/autocomplete_id",
+    "source": "http://cgit.drupalcode.org/autocomplete_id"
+  }
+}

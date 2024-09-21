@@ -1,0 +1,10 @@
+name: 'Entity reference modal'
+type: module
+description: 'Entity reference autosuggestion with option create new entity in modal.'
+package: Fields
+core_version_requirement: ^10 || ^11
+
+# Information added by Drupal.org packaging script on 2024-07-07
+version: '1.0.6'
+project: 'entity_reference_modal'
+datestamp: 1720366880

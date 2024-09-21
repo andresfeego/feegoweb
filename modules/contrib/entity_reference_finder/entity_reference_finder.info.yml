@@ -1,0 +1,10 @@
+name: Entity References Finder
+description: Module for searching all reference of an entity
+package: Administration
+type: module
+core_version_requirement: ^8 || ^9 || ^10
+
+# Information added by Drupal.org packaging script on 2022-09-16
+version: '1.0.0'
+project: 'entity_reference_finder'
+datestamp: 1663335887

@@ -1,0 +1,161 @@
+<?php
+
+/**
+ * @file
+ * Allows to flexibly create, browse and select entities.
+ */
+
+use Drupal\Component\Utility\NestedArray;
+use Drupal\Core\Ajax\AjaxResponse;
+use Drupal\Core\Ajax\InvokeCommand;
+use Drupal\Core\Ajax\ReplaceCommand;
+use Drupal\Core\Entity\Entity\EntityFormDisplay;
+use Drupal\Core\Entity\EntityFormInterface;
+use Drupal\Core\Field\FieldConfigInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Render\Element;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\field\Entity\FieldConfig;
+
+/**
+ * Implements hook_help().
+ */
+function entity_reference_modal_help($route_name, RouteMatchInterface $arg) {
+  switch ($route_name) {
+    case 'help.page.entity_reference_modal':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('The Entity Reference Modal module provides a generic entity reference suggestion with create new entity with modal. It can be used in any context where one needs to select a few entities and do something with them. For more information, see the online documentation for <a href=":entity_reference_modal-documentation">Entity reference modal</a>.', [':entity_reference_modal-documentation' => 'Entity Reference Modal']) . '</p>';
+      $output .= '<h3>' . t('Uses') . '</h3>';
+      $output .= '<dl>';
+      $output .= '<dt>' . t('General') . '</dt>';
+      $output .= '<dd>' . t('Entity Reference Modal comes with an entity reference field widget.') . '</dd>';
+      $output .= '<dt>' . t('Example use cases') . '</dt>';
+      $output .= '<dd>' . t('You need an auto-suggest entity, but you can find it, so you need to create a new entity without submitting your current form.') . '</dd>';
+      $output .= '<dd>' . t('Embedding entities into ckeditor 5') . '</dd>';
+      $output .= '</dl>';
+
+      return $output;
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function entity_reference_modal_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $route_name = \Drupal::routeMatch()->getRouteName();
+  if ($route_name == 'entity_reference_modal.entity_form') {
+    $form['status_messages'] = [
+      '#type' => 'status_messages',
+      '#weight' => -100,
+    ];
+    $form['actions']['submit']['#ajax'] = [
+      'callback' => 'entity_reference_modal_submit',
+    ];
+    $form['actions']['submit']['#type'] = 'button';
+    $form['#attached']['library'][] = 'entity_reference_modal/entity_reference_modal';
+  }
+}
+
+/**
+ * {@inheritDoc}
+ */
+function entity_reference_modal_submit(array &$form, FormStateInterface $form_state): AjaxResponse {
+  $response = new AjaxResponse();
+  if ($form_state->hasAnyErrors()) {
+    $response->addCommand(new ReplaceCommand(".form_wrapper", $form));
+  }
+  elseif ($form_state->getFormObject() instanceof EntityFormInterface) {
+    $route = \Drupal::routeMatch();
+    $entity_type = $route->getParameter('entity_type');
+    $bundle = $route->getParameter('bundle');
+    $entityManager = \Drupal::entityTypeManager();
+    $labelKey = $entityManager->getDefinition($entity_type)->getKey('label');
+    $bundleKey = $entityManager->getDefinition($entity_type)->getKey('bundle');
+    if (empty($labelKey) && $entity_type == 'user') {
+      $labelKey = 'name';
+    }
+    $query = \Drupal::request()->query->all();
+    $mode = $query['mode'] ?? 'default';
+    $entity = $form_state->getFormObject()->getEntity();
+    $entityFieldManager = \Drupal::service('entity_field.manager');
+    $definitions = $entityFieldManager->getFieldDefinitions($entity_type, $bundle);
+    $form_display = EntityFormDisplay::collectRenderDisplay($entity, $mode);
+    $extracted = $form_display->extractFormValues($entity, $form, $form_state);
+    foreach ($extracted as $field) {
+      $definition = $definitions[$field] ?? NULL;
+      if ($definition instanceof FieldConfigInterface || $definition instanceof FieldConfig) {
+        entity_reference_modal_children_element($form[$field], $form_state);
+      }
+    }
+    $form_state->getFormObject()->submitForm($form, $form_state);
+    $entity = $form_state->getFormObject()->getEntity();
+    $label = $entity->$labelKey->value;
+    // Check duplicated.
+    if (!empty($query['duplicate'])) {
+      $entity->save();
+    }
+    else {
+      $sql = \Drupal::entityQuery($entity_type)->accessCheck(TRUE);
+      if (!empty($bundleKey) && !is_null($bundle)) {
+        $sql->condition($bundleKey, $bundle);
+      }
+      if (!empty($labelKey) && !is_null($label)) {
+        $sql->condition($labelKey, $label);
+      }
+      $result = $sql->execute();
+      if (!empty($result)) {
+        $entity = $entityManager->getStorage($entity_type)->load(current($result));
+      }
+      else {
+        $entity->save();
+      }
+    }
+    $data = json_encode($query + [
+      "entity" => $label . " (" . $entity->id() . ")",
+    ]);
+    $response->addCommand(new InvokeCommand(NULL, 'injectEntity', [$data]));
+  }
+  return $response;
+}
+
+/**
+ * Recursive function to get input element.
+ */
+function entity_reference_modal_children_element($element, &$form_state) {
+  if (!empty($element['#input']) && !empty($element['#value']) && !empty($value_callable = $element['#value_callback'])) {
+    $input_exists = NULL;
+    $input = NestedArray::getValue($form_state->getUserInput(), $element['#parents'], $input_exists);
+    $value = call_user_func_array($value_callable, [
+      &$element,
+      $input,
+      $form_state,
+    ]);
+    if (!is_null($value)) {
+      $element['#value'] = $value;
+    }
+    $form_state->setValueForElement($element, $element['#value']);
+    if (isset($element['#element_validate'])) {
+      foreach ($element['#element_validate'] as $callback) {
+        $complete_form = &$form_state->getCompleteForm();
+        call_user_func_array($form_state->prepareCallback($callback), [
+          &$element,
+          &$form_state,
+          &$complete_form,
+        ]);
+      }
+    }
+    return $element;
+  }
+
+  if (is_array($element)) {
+    foreach (Element::children($element) as $child) {
+      $child_element = entity_reference_modal_children_element($element[$child], $form_state);
+      if (!empty($child_element)) {
+        return $child_element;
+      }
+    }
+  }
+
+  return NULL;
+}

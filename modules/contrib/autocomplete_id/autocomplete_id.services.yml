@@ -1,0 +1,22 @@
+services:
+  autocomplete_id.matcher:
+    class: Drupal\autocomplete_id\EntityIdAutocompleteMatcher
+    arguments:
+      - '@entity.autocomplete_matcher'
+      - '@plugin.manager.entity_reference_selection'
+      - '@entity_type.manager'
+      - '@entity.repository'
+      - '@current_user'
+
+  autocomplete_id.matcher_decorator:
+    class: Drupal\autocomplete_id\EntityIdAutocompleteMatcherDecorator
+    decorates: entity.autocomplete_matcher
+    decoration_priority: 60
+    public: true
+    arguments:
+      - '@autocomplete_id.matcher_decorator.inner'
+      - '@plugin.manager.entity_reference_selection'
+      - '@entity_type.manager'
+      - '@entity.repository'
+      - '@current_user'
+      - '@config.factory'

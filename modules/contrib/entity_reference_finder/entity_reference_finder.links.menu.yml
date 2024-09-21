@@ -1,0 +1,6 @@
+entity_reference_finder.page:
+  title: Entity Reference Finder
+  route_name: entity_reference_finder.page
+  parent: system.admin_reports
+  description: 'Entity reference finder'
+  weight: 5

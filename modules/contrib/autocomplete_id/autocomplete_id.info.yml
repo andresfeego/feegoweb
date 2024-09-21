@@ -1,0 +1,11 @@
+name: Autocomplete Entity ID
+type: module
+description: Extends standard entity autocomplete. Allow users to see autocomplete results by entity id.
+core_version_requirement: ^9 || ^10 || ^11
+package: Content
+configure: autocomplete_id.settings
+
+# Information added by Drupal.org packaging script on 2024-08-22
+version: '8.x-1.7'
+project: 'autocomplete_id'
+datestamp: 1724353547

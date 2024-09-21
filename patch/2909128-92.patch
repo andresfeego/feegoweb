@@ -1,0 +1,82 @@
+diff --git a/core/misc/autocomplete.es6.js b/core/misc/autocomplete.es6.js
+index eeac77e5f7..d5559df27f 100644
+--- a/core/misc/autocomplete.es6.js
++++ b/core/misc/autocomplete.es6.js
+@@ -6,6 +6,10 @@
+ (function ($, Drupal) {
+   let autocomplete;
+ 
++  const inBrowser = typeof window !== 'undefined';
++  const UA = inBrowser && window.navigator.userAgent.toLowerCase();
++  const isAndroid = UA && UA.indexOf('android') > 0;
++
+   /**
+    * Helper splitting terms from the autocomplete value.
+    *
+@@ -224,13 +228,24 @@
+             $(this).data('ui-autocomplete')._renderItem = autocomplete.options.renderItem;
+           });
+ 
+-        // Use CompositionEvent to handle IME inputs. It requests remote server on "compositionend" event only.
+-        $autocomplete.on('compositionstart.autocomplete', () => {
+-          autocomplete.options.isComposing = true;
+-        });
+-        $autocomplete.on('compositionend.autocomplete', () => {
++        // Use CompositionEvent to handle IME inputs. It requests remote server
++        // on "compositionend" event only.
++        // Safari < 10.2 & UIWebView doesn't fire compositionend when
++        // switching focus before confirming composition choice
++        // this also fixes the issue where some browsers e.g. iOS Chrome
++        // fires "change" instead of "input" on autocomplete.
++        // @see: https://github.com/vuejs/vue/blob/v2.4.4/src/platforms/web/runtime/directives/model.js
++        $autocomplete.on('change.autocomplete', () => {
+           autocomplete.options.isComposing = false;
+         });
++        if (!isAndroid) {
++          $autocomplete.on('compositionstart.autocomplete', () => {
++            autocomplete.options.isComposing = true;
++          });
++          $autocomplete.on('compositionend.autocomplete', () => {
++            autocomplete.options.isComposing = false;
++          });
++        }
+       }
+     },
+     detach(context, settings, trigger) {
+diff --git a/core/misc/autocomplete.js b/core/misc/autocomplete.js
+index aa3311d08d..2048981f6e 100644
+--- a/core/misc/autocomplete.js
++++ b/core/misc/autocomplete.js
+@@ -8,6 +8,10 @@
+ (function ($, Drupal) {
+   var autocomplete = void 0;
+ 
++  var inBrowser = typeof window !== 'undefined';
++  var UA = inBrowser && window.navigator.userAgent.toLowerCase();
++  var isAndroid = UA && UA.indexOf('android') > 0;
++
+   function autocompleteSplitValues(value) {
+     var result = [];
+     var quote = false;
+@@ -122,12 +126,17 @@
+           $(this).data('ui-autocomplete')._renderItem = autocomplete.options.renderItem;
+         });
+ 
+-        $autocomplete.on('compositionstart.autocomplete', function () {
+-          autocomplete.options.isComposing = true;
+-        });
+-        $autocomplete.on('compositionend.autocomplete', function () {
++        $autocomplete.on('change.autocomplete', function () {
+           autocomplete.options.isComposing = false;
+         });
++        if (!isAndroid) {
++          $autocomplete.on('compositionstart.autocomplete', function () {
++            autocomplete.options.isComposing = true;
++          });
++          $autocomplete.on('compositionend.autocomplete', function () {
++            autocomplete.options.isComposing = false;
++          });
++        }
+       }
+     },
+     detach: function detach(context, settings, trigger) {

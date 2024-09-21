@@ -1,0 +1,4 @@
+view entity autocomplete id results:
+  title: 'Allow users to see autocomplete results by entity id'
+administer entity autocomplete id:
+  title: 'Allow users to access module configuration form.'
