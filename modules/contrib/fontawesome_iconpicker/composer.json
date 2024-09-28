@@ -1,0 +1,19 @@
+{
+  "name": "drupal/fontawesome_iconpicker",
+  "type": "drupal-module",
+  "description": "Fontawesome iconpicker using AppoloDev/vanilla-icon-picker",
+  "keywords": [
+    "Drupal"
+  ],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/fontawesome_iconpicker",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/fontawesome_iconpicker",
+    "source": "http://cgit.drupalcode.org/fontawesome_iconpicker"
+  },
+  "require": {
+    "composer/installers": "^1.9 || ^2.0",
+    "d34dman/vanilla-icon-picker": "^1.3.0"
+  }
+}

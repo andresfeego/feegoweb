@@ -4,7 +4,8 @@ global-styling:
     js/global.js: {}
   css:
     component:
-      css/style.css: {}
+      css/0_style_home.css: {}
+      css/0_style_dashboard.css: {}
       css/colors.css: {}
 bootstrap:
   js:

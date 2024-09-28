@@ -1,0 +1,12 @@
+name: '@fontyourface - Web Safe Fonts'
+type: module
+description: '@font-your-face provider with Web Safe Fonts. For testing purposes.'
+core_version_requirement: ^9.4 || ^10.0
+package: Testing
+dependencies:
+  - fontyourface:fontyourface
+
+# Information added by Drupal.org packaging script on 2023-09-12
+version: '4.0.0'
+project: 'fontyourface'
+datestamp: 1694523480

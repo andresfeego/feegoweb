@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * @file
+ * Contains fontawesome_iconpicker.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function fontawesome_iconpicker_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help.
+    case 'help.page.fontawesome_iconpicker':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Font Awesome Iconpicker.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function fontawesome_iconpicker_theme($existing, $type, $theme, $path) {
+  return [
+    'fontawesome_iconpicker_formatter' => [
+      'variables' => [
+        'icon' => '',
+        'size' => '1x',
+      ],
+    ],
+  ];
+}

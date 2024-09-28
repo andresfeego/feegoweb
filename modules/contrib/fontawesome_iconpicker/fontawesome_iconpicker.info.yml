@@ -1,0 +1,13 @@
+name: Font Awesome Iconpicker
+type: module
+description: Icon picker field that uses the Font Awesome library.
+core_version_requirement: ^8.8 || ^9 || ^10
+package: Custom
+
+dependencies:
+  - fontawesome:fontawesome
+
+# Information added by Drupal.org packaging script on 2024-07-23
+version: '3.0.0-rc1'
+project: 'fontawesome_iconpicker'
+datestamp: 1721769594

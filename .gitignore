@@ -11,6 +11,7 @@
 
 # Ignore paths that may contain user-generated content
 /sites/*/files
+!/sites/default/files/config_HOHALF6GzUZ-O-54kLRDoAsfLnB6LIpArdgz7F73l1vxkze9DxfR7lluGoDpt62Gy9Dsusa1kQ/sync/
 /sites/*/public
 /sites/*/private
 /sites/*/files-public

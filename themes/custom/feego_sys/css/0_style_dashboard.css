@@ -1,0 +1,108 @@
+.container-fluid, .row{
+    --bs-gutter-x: 0px !important;
+}
+
+
+body:has(:not(.path-frontpage), .layout-no-sidebars) main{
+    padding: 24px 48px 92px;
+}
+body.path-frontpage main{
+    padding: 0px;
+}
+
+ .field-content img{
+    width: 100%;
+    height: auto;
+}
+
+.svg-inline--fa{
+    margin-right: 10px;
+}
+
+.region-secondary-menu{
+    height: min-content;
+}
+
+.region-secondary-menu .menu.sf-menu {
+    margin: 0;
+}
+
+.region-secondary-menu .menu.sf-menu  #admin-side-right-menu-menu-link-content42e24405-8ed8-4d74-9829-1e76f63b230f{
+    background-color: transparent;
+}
+
+.region-secondary-menu .menu.sf-menu  #admin-side-right-menu-menu-link-content42e24405-8ed8-4d74-9829-1e76f63b230f ul{
+    background-color: #54BFA2;
+}
+
+
+.views-element-container .view-content {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-top: 33px;
+}
+
+.views-element-container .view-content .views-row {
+    width: 270px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0px 7px rgba(0, 0, 0, 0.7);
+    padding: 16px;
+}
+
+.views-element-container .view-header{
+    display: flex;
+    flex-direction: row;
+}
+
+.views-element-container {
+    --bs-gutter-x: 0;
+}
+
+.block-page-title-block {
+    /* padding-left: 24px; */
+}
+
+.view-header .btn-primary {
+    width: fit-content;
+    background-color: var(--bs-primary);
+    color: initial;
+    text-decoration: none;
+    font-family: 'Berlin';
+    margin: 12px 0;
+    padding: 6px 12px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    margin-right: 16px;
+}
+
+.view-header .btn-primary:hover {
+    background-color: #00c3ad;
+}
+
+.view-filters .js-form-item {
+    margin-right: 16px;
+}
+
+@media screen and (width <= 520px) {
+    body:has(:not(.path-frontpage), .layout-no-sidebars) main{
+        padding: 16px 16px 92px;
+    } 
+
+    .views-element-container .view-content .views-row {
+        width: 100%;
+        border-radius: 8px;
+        padding: 12px;
+        box-shadow: none;
+        border: 1px solid #ced4da;
+    }
+
+    .view-filters .js-form-item {
+        margin-bottom: 4px !important;
+    }
+
+    
+  }

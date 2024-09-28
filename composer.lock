@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "14b333754188593a0719857b1a4d63e8",
+    "content-hash": "9c990a99adaa3506cc21e26f939f2675",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -917,6 +917,38 @@
                 "source": "https://github.com/cweagans/composer-patches/tree/1.7.3"
             },
             "time": "2022-12-20T22:53:13+00:00"
+        },
+        {
+            "name": "d34dman/vanilla-icon-picker",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/d34dman/vanilla-icon-picker.git",
+                "reference": "43af6de98462f360fd1f6289e3eb4aa15757b6df"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/d34dman/vanilla-icon-picker/zipball/43af6de98462f360fd1f6289e3eb4aa15757b6df",
+                "reference": "43af6de98462f360fd1f6289e3eb4aa15757b6df",
+                "shasum": ""
+            },
+            "type": "drupal-library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Shibin Das",
+                    "email": "shibinkidd@gmail.com"
+                }
+            ],
+            "description": "Package appolodev/vanilla-icon-picker as \"drupal-library\" type composer library",
+            "support": {
+                "issues": "https://github.com/d34dman/vanilla-icon-picker/issues",
+                "source": "https://github.com/d34dman/vanilla-icon-picker/tree/1.3.0"
+            },
+            "time": "2024-07-23T18:16:58+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -2383,6 +2415,136 @@
             }
         },
         {
+            "name": "drupal/exclude_node_title",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/exclude_node_title.git",
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/exclude_node_title-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "c6f6c0e06c202f3ace436867a459f8672e1494f5"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.4",
+                    "datestamp": "1659271679",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Neslee Canil Pinto",
+                    "homepage": "https://www.drupal.org/u/neslee-canil-pinto",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "gabrielu",
+                    "homepage": "https://www.drupal.org/user/279352"
+                },
+                {
+                    "name": "neslee canil pinto",
+                    "homepage": "https://www.drupal.org/user/3580850"
+                }
+            ],
+            "description": "Provides the option of excluding node title(s) from display by individual node, node bundle, and view mode.",
+            "homepage": "https://www.drupal.org/project/exclude_node_title",
+            "support": {
+                "source": "https://git.drupalcode.org/project/exclude_node_title",
+                "issues": "https://www.drupal.org/project/issues/exclude_node_title"
+            }
+        },
+        {
+            "name": "drupal/field_group",
+            "version": "3.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/field_group.git",
+                "reference": "8.x-3.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/field_group-8.x-3.6.zip",
+                "reference": "8.x-3.6",
+                "shasum": "427c0a65dc1936e69e60c120776056cfe5b43e86"
+            },
+            "require": {
+                "drupal/core": "^9.2 || ^10 || ^11"
+            },
+            "require-dev": {
+                "drupal/jquery_ui_accordion": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-3.6",
+                    "datestamp": "1722672510",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "anybody",
+                    "homepage": "https://www.drupal.org/user/291091"
+                },
+                {
+                    "name": "grevil",
+                    "homepage": "https://www.drupal.org/user/3668491"
+                },
+                {
+                    "name": "hydra",
+                    "homepage": "https://www.drupal.org/user/647364"
+                },
+                {
+                    "name": "joevagyok",
+                    "homepage": "https://www.drupal.org/user/2876343"
+                },
+                {
+                    "name": "jyve",
+                    "homepage": "https://www.drupal.org/user/591438"
+                },
+                {
+                    "name": "nils.destoop",
+                    "homepage": "https://www.drupal.org/user/361625"
+                },
+                {
+                    "name": "Stalski",
+                    "homepage": "https://www.drupal.org/user/322618"
+                },
+                {
+                    "name": "swentel",
+                    "homepage": "https://www.drupal.org/user/107403"
+                }
+            ],
+            "description": "Provides the field_group module.",
+            "homepage": "https://www.drupal.org/project/field_group",
+            "support": {
+                "source": "https://git.drupalcode.org/project/field_group",
+                "issues": "https://www.drupal.org/project/issues/field_group"
+            }
+        },
+        {
             "name": "drupal/field_permissions",
             "version": "1.4.0",
             "source": {
@@ -2444,6 +2606,225 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/field_permissions",
                 "issues": "https://www.drupal.org/project/issues/field_permissions"
+            }
+        },
+        {
+            "name": "drupal/fontawesome",
+            "version": "2.26.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/fontawesome.git",
+                "reference": "8.x-2.26"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/fontawesome-8.x-2.26.zip",
+                "reference": "8.x-2.26",
+                "shasum": "22e67458e1ebc274c3a8b494ce2c4056a3d2af29"
+            },
+            "require": {
+                "drupal/core": "^9.4 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.26",
+                    "datestamp": "1688063477",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9 || ^10 || ^11"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel.Moberly",
+                    "homepage": "https://www.drupal.org/user/1160788"
+                },
+                {
+                    "name": "truls1502",
+                    "homepage": "https://www.drupal.org/user/325866"
+                }
+            ],
+            "description": "The web's most popular icon set and toolkit.",
+            "homepage": "https://www.drupal.org/project/fontawesome",
+            "support": {
+                "source": "https://git.drupalcode.org/project/fontawesome",
+                "issues": "https://drupal.org/project/issues/fontawesome"
+            }
+        },
+        {
+            "name": "drupal/fontawesome_iconpicker",
+            "version": "3.0.0-rc1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/fontawesome_iconpicker.git",
+                "reference": "3.0.0-rc1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/fontawesome_iconpicker-3.0.0-rc1.zip",
+                "reference": "3.0.0-rc1",
+                "shasum": "52f9a1c47e009554cbfaea40363214a0baec55b4"
+            },
+            "require": {
+                "composer/installers": "^1.9 || ^2.0",
+                "d34dman/vanilla-icon-picker": "^1.3.0",
+                "drupal/core": "^8.8 || ^9 || ^10",
+                "drupal/fontawesome": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.0.0-rc1",
+                    "datestamp": "1721769592",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "D34dMan",
+                    "homepage": "https://www.drupal.org/user/751698"
+                }
+            ],
+            "description": "Fontawesome iconpicker using AppoloDev/vanilla-icon-picker",
+            "homepage": "https://www.drupal.org/project/fontawesome_iconpicker",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/fontawesome_iconpicker",
+                "issues": "https://www.drupal.org/project/issues/fontawesome_iconpicker"
+            }
+        },
+        {
+            "name": "drupal/fontawesome_menu_icons",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/fontawesome_menu_icons.git",
+                "reference": "3.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/fontawesome_menu_icons-3.0.0.zip",
+                "reference": "3.0.0",
+                "shasum": "75d1294aa5069abefc81771b96b5856911cd8ae3"
+            },
+            "require": {
+                "drupal/core": "^10",
+                "drupal/fontawesome": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.0.0",
+                    "datestamp": "1700814593",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "lonalore",
+                    "homepage": "https://www.drupal.org/user/1539304"
+                }
+            ],
+            "description": "FontAwesome Menu Icons.",
+            "homepage": "https://www.drupal.org/project/fontawesome_menu_icons",
+            "support": {
+                "source": "https://git.drupalcode.org/project/fontawesome_menu_icons"
+            }
+        },
+        {
+            "name": "drupal/fontyourface",
+            "version": "4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/fontyourface.git",
+                "reference": "4.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/fontyourface-4.0.0.zip",
+                "reference": "4.0.0",
+                "shasum": "415a8af33d6260925bd0076fc8d9a33b9ce669ed"
+            },
+            "require": {
+                "drupal/core": "^9.4 || ^10.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "4.0.0",
+                    "datestamp": "1694523475",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Neslee Canil Pinto",
+                    "homepage": "https://www.drupal.org/u/neslee-canil-pinto",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "BTMash",
+                    "homepage": "https://www.drupal.org/user/60422"
+                },
+                {
+                    "name": "Drave Robber",
+                    "homepage": "https://www.drupal.org/user/984338"
+                },
+                {
+                    "name": "hmendes",
+                    "homepage": "https://www.drupal.org/user/3673677"
+                },
+                {
+                    "name": "neslee canil pinto",
+                    "homepage": "https://www.drupal.org/user/3580850"
+                },
+                {
+                    "name": "sreynen",
+                    "homepage": "https://www.drupal.org/user/109890"
+                }
+            ],
+            "description": "Web font management tools.",
+            "homepage": "https://www.drupal.org/project/fontyourface",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/fontyourface",
+                "issues": "https://drupal.org/project/issues/fontyourface"
             }
         },
         {
@@ -7712,7 +8093,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "drupal/conditional_fields": 15
+        "drupal/conditional_fields": 15,
+        "drupal/fontawesome_iconpicker": 5
     },
     "prefer-stable": true,
     "prefer-lowest": false,
