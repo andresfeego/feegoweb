@@ -1,0 +1,20 @@
+uuid: 14c55fa5-0d9a-40a0-9262-a966b49b6f28
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_product_cost
+field_name: field_product_cost
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

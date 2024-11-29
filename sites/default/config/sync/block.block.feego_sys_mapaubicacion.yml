@@ -1,0 +1,30 @@
+uuid: 07d721e1-c46d-458b-9a6c-f6c148047a2c
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:217c7231-c265-456d-9bad-c1b2abc53dc4'
+  module:
+    - block_content
+    - system
+  theme:
+    - feego_sys
+id: feego_sys_mapaubicacion
+theme: feego_sys
+region: footer_first
+weight: 0
+provider: null
+plugin: 'block_content:217c7231-c265-456d-9bad-c1b2abc53dc4'
+settings:
+  id: 'block_content:217c7231-c265-456d-9bad-c1b2abc53dc4'
+  label: 'Mapa ubicación'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

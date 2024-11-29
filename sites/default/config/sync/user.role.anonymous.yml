@@ -1,0 +1,49 @@
+uuid: abbc31e0-4275-44f9-b2b2-9a9d1194a0c4
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+    - node.type.slide_image
+  module:
+    - comment
+    - contact
+    - exclude_node_title
+    - field_permissions
+    - filter
+    - media
+    - node
+    - paragraphs
+    - paragraphs_type_permissions
+    - search
+    - system
+_core:
+  default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
+id: anonymous
+label: 'Usuario anónimo'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'search content'
+  - 'use exclude node title'
+  - 'use text format restricted_html'
+  - 'view field_grid_service_image'
+  - 'view field_web_image_grid'
+  - 'view field_web_page_title'
+  - 'view field_you_know_that'
+  - 'view media'
+  - 'view own field_grid_service_image'
+  - 'view own field_web_image_grid'
+  - 'view own field_web_page_title'
+  - 'view own field_you_know_that'
+  - 'view paragraph content blck_informativo_pagina_1'
+  - 'view paragraph content blck_informativo_pagina_2'
+  - 'view paragraph content blck_page_information_1'
+  - 'view paragraph content especificaciones'
+  - 'view paragraph content page_service'
+  - 'view paragraph content titulo_separador'
+  - 'view slide_image revisions'
+  - 'view unpublished paragraphs'

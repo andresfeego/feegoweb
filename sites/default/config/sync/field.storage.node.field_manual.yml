@@ -1,0 +1,23 @@
+uuid: 9d8588c8-6ade-4026-90b4-a9bd9625cd8e
+langcode: es
+status: true
+dependencies:
+  module:
+    - file
+    - node
+id: node.field_manual
+field_name: field_manual
+entity_type: node
+type: file
+settings:
+  target_type: file
+  display_field: true
+  display_default: false
+  uri_scheme: public
+module: file
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

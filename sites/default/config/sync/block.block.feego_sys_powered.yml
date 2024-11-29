@@ -1,0 +1,22 @@
+uuid: 55936d66-baa2-4742-89ae-8202a91f1e93
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - feego_sys
+_core:
+  default_config_hash: 0NHg2oDF2TMb3vywPaHGv3G2bXW805r3nTHt5KzUa1o
+id: feego_sys_powered
+theme: feego_sys
+region: footer_fifth
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,19 @@
+uuid: 5354bef1-5c0e-4a4f-b482-57f42254836c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_field_link_description
+    - node.type.link_informativo
+id: node.link_informativo.field_field_link_description
+field_name: field_field_link_description
+entity_type: node
+bundle: link_informativo
+label: Descripción
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

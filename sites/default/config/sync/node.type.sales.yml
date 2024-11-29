@@ -1,0 +1,17 @@
+uuid: a1c7ab5f-d551-4a8e-ad06-867defb94260
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Factura
+type: sales
+description: null
+help: null
+new_revision: true
+preview_mode: 0
+display_submitted: false

@@ -1,0 +1,17 @@
+uuid: 62a73525-afeb-4f2c-b667-34cc2dff9d50
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Equipo
+type: equipo
+description: 'Activos de clientes '
+help: null
+new_revision: true
+preview_mode: 0
+display_submitted: false

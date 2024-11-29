@@ -1,0 +1,21 @@
+uuid: 609e439b-6c08-47d9-b385-0f1b344f1522
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_product_state
+    - node.type.product
+  module:
+    - options
+id: node.product.field_product_state
+field_name: field_product_state
+entity_type: node
+bundle: product
+label: Estado
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

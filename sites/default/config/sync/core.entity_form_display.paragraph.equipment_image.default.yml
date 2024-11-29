@@ -1,0 +1,42 @@
+uuid: 665e037f-1a0a-499f-9f3b-b1e3b7fa7a4c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.equipment_image.field_image
+    - field.field.paragraph.equipment_image.field_news
+    - field.field.paragraph.equipment_image.field_time_stamp
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.equipment_image
+  module:
+    - image
+id: paragraph.equipment_image.default
+targetEntityType: paragraph
+bundle: equipment_image
+mode: default
+content:
+  field_image:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_news:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_time_stamp:
+    type: datetime_timestamp
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

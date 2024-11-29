@@ -1,0 +1,11 @@
+uuid: c287e70e-247c-4750-a8d6-60efaed1bc34
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.sales
+id: node.sales
+target_entity_type_id: node
+target_bundle: sales
+default_langcode: site_default
+language_alterable: false

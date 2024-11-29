@@ -1,0 +1,26 @@
+uuid: 194d914c-7db6-4650-9a06-75d120cd9e82
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - feego_sys
+_core:
+  default_config_hash: akUdnBBLL0iXFKLPMdJ6Mafq_inTB9tOE143DTlByF4
+id: feego_sys_page_title
+theme: feego_sys
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

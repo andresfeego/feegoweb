@@ -1,0 +1,10 @@
+uuid: b61c583f-dd24-4cd8-89e3-33b7a1dd3946
+langcode: es
+status: true
+dependencies: {  }
+id: equipment_image
+label: 'Imagen equipo'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

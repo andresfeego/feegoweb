@@ -1,0 +1,19 @@
+uuid: 55b538a5-584b-4dec-a1ee-2b340b91b8fb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_news
+    - node.type.sales
+id: node.sales.field_news
+field_name: field_news
+entity_type: node
+bundle: sales
+label: Novedad
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

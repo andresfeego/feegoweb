@@ -1,0 +1,9 @@
+uuid: b483ce93-8526-4dd4-a626-729548e686fc
+langcode: es
+status: true
+dependencies: {  }
+name: RAM
+vid: memoria_ram
+description: null
+weight: -8
+new_revision: false

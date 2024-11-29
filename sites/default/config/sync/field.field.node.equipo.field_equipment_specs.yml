@@ -1,0 +1,31 @@
+uuid: e944d259-0cb4-4498-aeaa-2256d2a43f43
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_equipment_specs
+    - node.type.equipo
+    - paragraphs.paragraphs_type.especificaciones
+  module:
+    - entity_reference_revisions
+id: node.equipo.field_equipment_specs
+field_name: field_equipment_specs
+entity_type: node
+bundle: equipo
+label: Especificaciones
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      especificaciones: especificaciones
+    negate: 0
+    target_bundles_drag_drop:
+      especificaciones:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

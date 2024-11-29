@@ -1,0 +1,19 @@
+uuid: 63c952bb-3b9e-42d0-b08d-9d00da48451a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title_block3
+    - paragraphs.paragraphs_type.blck_informativo_pagina_1
+id: paragraph.blck_informativo_pagina_1.field_title_block3
+field_name: field_title_block3
+entity_type: paragraph
+bundle: blck_informativo_pagina_1
+label: Título
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

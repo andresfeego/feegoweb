@@ -1,0 +1,18 @@
+uuid: 3229a5c0-d529-465f-8b2e-487cfe971642
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.modelo
+id: node.modelo.title
+field_name: title
+entity_type: node
+bundle: modelo
+label: Modelo
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

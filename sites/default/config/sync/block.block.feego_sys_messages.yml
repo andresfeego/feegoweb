@@ -1,0 +1,22 @@
+uuid: 3f8dfa71-193d-4037-a909-3de1f6691907
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - feego_sys
+_core:
+  default_config_hash: Q-k6JqPyPt6TDkEn5l_FmS85knAUqB8DZsyGKUT_0wg
+id: feego_sys_messages
+theme: feego_sys
+region: highlighted
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,141 @@
+uuid: d96c003b-52d6-4b21-8a56-48de34eac30a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.solicitud.field_contact_channel
+    - field.field.node.solicitud.field_news
+    - field.field.node.solicitud.field_request_client
+    - field.field.node.solicitud.field_request_equipment
+    - field.field.node.solicitud.field_request_state
+    - field.field.node.solicitud.field_requested_service
+    - node.type.solicitud
+  module:
+    - entity_reference_modal
+    - path
+id: node.solicitud.default
+targetEntityType: node
+bundle: solicitud
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_contact_channel:
+    type: options_select
+    weight: 122
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_news:
+    type: string_textfield
+    weight: 127
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_request_client:
+    type: entity_reference_modal
+    weight: 121
+    region: content
+    settings:
+      add_new_button_title: +
+      modal_form_mode: default
+      modal_width: 80%
+      modal_title: 'Añadir nuevo'
+      duplicate: false
+      search: true
+      bootstrap: false
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_request_equipment:
+    type: entity_reference_modal
+    weight: 126
+    region: content
+    settings:
+      add_new_button_title: +
+      modal_form_mode: default
+      modal_width: 80%
+      modal_title: 'Añadir nuevo'
+      duplicate: false
+      search: true
+      bootstrap: false
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_request_state:
+    type: options_select
+    weight: 125
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_requested_service:
+    type: string_textarea
+    weight: 123
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

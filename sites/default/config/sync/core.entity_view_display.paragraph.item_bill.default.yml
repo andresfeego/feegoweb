@@ -1,0 +1,31 @@
+uuid: 957aa0ed-03f9-4530-b9bb-12ba9196a9bf
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.item_bill.field_item_bill
+    - field.field.paragraph.item_bill.field_valor
+    - paragraphs.paragraphs_type.item_bill
+id: paragraph.item_bill.default
+targetEntityType: paragraph
+bundle: item_bill
+mode: default
+content:
+  field_item_bill:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_valor:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

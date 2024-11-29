@@ -1,0 +1,19 @@
+uuid: c02cf4bb-b62c-4028-b082-b96d9a1e88e1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_news
+    - node.type.solicitud
+id: node.solicitud.field_news
+field_name: field_news
+entity_type: node
+bundle: solicitud
+label: Novedad
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

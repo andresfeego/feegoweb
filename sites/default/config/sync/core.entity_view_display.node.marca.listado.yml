@@ -1,0 +1,46 @@
+uuid: 0e84b3b5-456b-4045-aa10-15f134f9e595
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.listado
+    - field.field.node.marca.field_extended_logo
+    - field.field.node.marca.field_logo
+    - node.type.marca
+  module:
+    - image
+    - user
+id: node.marca.listado
+targetEntityType: node
+bundle: marca
+mode: listado
+content:
+  field_extended_logo:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_logo:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

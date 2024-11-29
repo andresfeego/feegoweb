@@ -1,0 +1,46 @@
+uuid: b1ea32b9-b763-4a06-947a-0e729446caab
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_you_know_that
+    - node.type.home_page
+    - paragraphs.paragraphs_type.blck_informativo_pagina_2
+  module:
+    - entity_reference_revisions
+id: node.home_page.field_you_know_that
+field_name: field_you_know_that
+entity_type: node
+bundle: home_page
+label: 'Sabias que'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      blck_informativo_pagina_2: blck_informativo_pagina_2
+    negate: 0
+    target_bundles_drag_drop:
+      blck_informativo_pagina_2:
+        weight: 7
+        enabled: true
+      blck_page_information_1:
+        weight: 8
+        enabled: false
+      equipment_image:
+        weight: 9
+        enabled: false
+      especificaciones:
+        weight: 10
+        enabled: false
+      page_service:
+        weight: 11
+        enabled: false
+      titulo_separador:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,10 @@
+uuid: 230eab1b-a0ad-4095-a751-0ca9d3142a14
+langcode: es
+status: true
+dependencies: {  }
+id: blck_page_information_1
+label: 'Blck Informativo página 1'
+icon_uuid: null
+icon_default: null
+description: 'Título - subtítulo - texto - imagen'
+behavior_plugins: {  }

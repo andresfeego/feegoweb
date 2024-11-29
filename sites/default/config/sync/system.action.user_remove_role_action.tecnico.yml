@@ -1,0 +1,14 @@
+uuid: 737e5968-a2b3-43d1-ab5e-3dc4b284e699
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.tecnico
+  module:
+    - user
+id: user_remove_role_action.tecnico
+label: 'Elimina el rol Técnico al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: tecnico

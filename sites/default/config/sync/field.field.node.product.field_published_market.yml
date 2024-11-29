@@ -1,0 +1,21 @@
+uuid: d6881582-d5ba-4c96-935b-58e5356ae5e1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_published_market
+    - node.type.product
+  module:
+    - options
+id: node.product.field_published_market
+field_name: field_published_market
+entity_type: node
+bundle: product
+label: 'Publicado en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

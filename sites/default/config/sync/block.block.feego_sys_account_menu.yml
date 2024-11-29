@@ -1,0 +1,27 @@
+uuid: e27d3436-0c3f-42d3-ba3e-61df1cdfdd95
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - feego_sys
+_core:
+  default_config_hash: O3zGScBaZpCS5Jg4wyABPMxVUnIb6bB2TQnVm1e5o2Y
+id: feego_sys_account_menu
+theme: feego_sys
+region: top_header_form
+weight: -7
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

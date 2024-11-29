@@ -1,0 +1,29 @@
+uuid: 19d69595-a0f4-41e4-bfa3-20868eae313b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_model_type
+    - node.type.modelo
+    - taxonomy.vocabulary.tipos_de_modelo
+id: node.modelo.field_model_type
+field_name: field_model_type
+entity_type: node
+bundle: modelo
+label: Tipo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipos_de_modelo: tipos_de_modelo
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

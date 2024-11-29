@@ -1,0 +1,9 @@
+uuid: 7be1208c-18a5-42ea-97d9-e5e6885d7cae
+langcode: es
+status: true
+dependencies: {  }
+name: Almacenamiento
+vid: storage
+description: null
+weight: -5
+new_revision: false

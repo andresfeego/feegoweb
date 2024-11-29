@@ -1,0 +1,22 @@
+uuid: 21caeb2d-a4b5-4ca7-ad68-5ca58eb4a53b
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.marca
+id: node.marca.promote
+field_name: promote
+entity_type: node
+bundle: marca
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

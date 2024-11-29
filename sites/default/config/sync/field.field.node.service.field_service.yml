@@ -1,0 +1,19 @@
+uuid: 0b1d17bd-2092-45dc-a3c8-dc99f8ecf9bc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_service
+    - node.type.service
+id: node.service.field_service
+field_name: field_service
+entity_type: node
+bundle: service
+label: 'Detalle del servicio'
+description: 'Descripción del servicio'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

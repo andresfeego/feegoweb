@@ -1,0 +1,72 @@
+uuid: b88dc34f-a81f-4dc5-b5ff-b55bda2fbd5c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.solicitud.field_contact_channel
+    - field.field.node.solicitud.field_news
+    - field.field.node.solicitud.field_request_client
+    - field.field.node.solicitud.field_request_equipment
+    - field.field.node.solicitud.field_request_state
+    - field.field.node.solicitud.field_requested_service
+    - node.type.solicitud
+  module:
+    - options
+    - user
+id: node.solicitud.default
+targetEntityType: node
+bundle: solicitud
+mode: default
+content:
+  field_contact_channel:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_news:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_request_client:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_request_equipment:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_request_state:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_requested_service:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

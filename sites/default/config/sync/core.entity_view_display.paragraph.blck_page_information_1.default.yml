@@ -1,0 +1,74 @@
+uuid: c63b2323-63ab-4dba-bb02-027e8a4a7d4c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.blck_page_information_1.field_imagen
+    - field.field.paragraph.blck_page_information_1.field_subtitle
+    - field.field.paragraph.blck_page_information_1.field_texto
+    - field.field.paragraph.blck_page_information_1.field_titulo
+    - paragraphs.paragraphs_type.blck_page_information_1
+  module:
+    - field_group
+third_party_settings:
+  field_group:
+    group_text_group_block_1:
+      children:
+        - field_titulo
+        - field_subtitle
+        - field_texto
+      label: text-group-block-1
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: text-group-block-1
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: paragraph.blck_page_information_1.default
+targetEntityType: paragraph
+bundle: blck_page_information_1
+mode: default
+content:
+  field_imagen:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_subtitle:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_texto:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_titulo:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

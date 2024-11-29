@@ -1,0 +1,11 @@
+uuid: 26909d36-b81c-4128-984d-7a9af542aee1
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.storage
+id: taxonomy_term.storage
+target_entity_type_id: taxonomy_term
+target_bundle: storage
+default_langcode: site_default
+language_alterable: false

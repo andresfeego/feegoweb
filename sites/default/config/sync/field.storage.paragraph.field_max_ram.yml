@@ -1,0 +1,20 @@
+uuid: fd1aeda4-6d0c-4e0f-8d7f-0c9019a99f6d
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - taxonomy
+id: paragraph.field_max_ram
+field_name: field_max_ram
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

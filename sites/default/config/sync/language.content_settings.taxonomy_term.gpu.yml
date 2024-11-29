@@ -1,0 +1,11 @@
+uuid: d7342782-92a3-4aba-bb65-2e01755fb4b1
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.gpu
+id: taxonomy_term.gpu
+target_entity_type_id: taxonomy_term
+target_bundle: gpu
+default_langcode: site_default
+language_alterable: false

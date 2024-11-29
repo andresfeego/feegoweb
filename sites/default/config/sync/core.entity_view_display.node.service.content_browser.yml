@@ -1,0 +1,39 @@
+uuid: 78bc048b-d571-4f0f-8b31-d0c379b76bc0
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.content_browser
+    - field.field.node.service.field_asigned_to
+    - field.field.node.service.field_equipment_service
+    - field.field.node.service.field_news
+    - field.field.node.service.field_private_service_obs
+    - field.field.node.service.field_request
+    - field.field.node.service.field_service
+    - field.field.node.service.field_service_obs
+    - field.field.node.service.field_service_state
+    - field.field.node.service.field_service_type
+    - node.type.service
+  module:
+    - user
+id: node.service.content_browser
+targetEntityType: node
+bundle: service
+mode: content_browser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_asigned_to: true
+  field_equipment_service: true
+  field_news: true
+  field_private_service_obs: true
+  field_request: true
+  field_service: true
+  field_service_obs: true
+  field_service_state: true
+  field_service_type: true
+  langcode: true

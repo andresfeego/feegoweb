@@ -1,0 +1,21 @@
+uuid: 1595c49b-6a7d-4a8f-8cf9-d851a396756b
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.empresa
+  module:
+    - user
+id: node.empresa.teaser
+targetEntityType: node
+bundle: empresa
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

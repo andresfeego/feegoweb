@@ -1,0 +1,31 @@
+uuid: 75862234-c08f-43cf-a2a0-532d89003589
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_video
+    - media.type.remote_video
+    - media.type.video
+    - node.type.link_informativo
+id: node.link_informativo.field_link_video
+field_name: field_link_video
+entity_type: node
+bundle: link_informativo
+label: Video
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      remote_video: remote_video
+      video: video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: remote_video
+field_type: entity_reference

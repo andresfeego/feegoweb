@@ -1,0 +1,13 @@
+uuid: 803d7755-c710-4316-9221-e38ee1e3b86b
+langcode: es
+status: false
+dependencies:
+  module:
+    - fontyourface
+_core:
+  default_config_hash: rftvifM6gdARc-tJa62RoSKjTyAnHLlkK-7F-2sO0H8
+id: font.teaser
+label: 'Teaser Mode'
+description: ''
+targetEntityType: font
+cache: false

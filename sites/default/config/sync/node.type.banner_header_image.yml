@@ -1,0 +1,17 @@
+uuid: 55c944ad-0aba-46c6-9795-4cab88336dac
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Banner imagen encabezado'
+type: banner_header_image
+description: 'Imagenes del banner para encabezados de páginas'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

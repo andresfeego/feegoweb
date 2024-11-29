@@ -1,0 +1,10 @@
+uuid: 2bb46319-275b-4788-a156-cd586f3cc23d
+langcode: es
+status: true
+dependencies: {  }
+id: titulo_separador
+label: 'Título separador'
+icon_uuid: null
+icon_default: null
+description: 'Título separador - opcional imagenes o iconos'
+behavior_plugins: {  }

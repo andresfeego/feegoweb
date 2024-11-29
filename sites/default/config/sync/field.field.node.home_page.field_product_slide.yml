@@ -1,0 +1,29 @@
+uuid: 095a7a01-b826-4188-852b-bf30f21adf5e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_product_slide
+    - node.type.home_page
+    - node.type.product
+id: node.home_page.field_product_slide
+field_name: field_product_slide
+entity_type: node
+bundle: home_page
+label: 'Slide productos'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      product: product
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

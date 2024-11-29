@@ -1,0 +1,19 @@
+uuid: 1018b768-b1e8-44c6-8ce3-d299e877fdb2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_large_text
+    - paragraphs.paragraphs_type.blck_informativo_pagina_2
+id: paragraph.blck_informativo_pagina_2.field_large_text
+field_name: field_large_text
+entity_type: paragraph
+bundle: blck_informativo_pagina_2
+label: 'Texto amplio'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

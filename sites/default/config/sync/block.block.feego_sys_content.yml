@@ -1,0 +1,22 @@
+uuid: 90659fb3-4b6f-413f-a453-54e150243999
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - feego_sys
+_core:
+  default_config_hash: 0DtF68Y5wau_hxJ3ymrO3AOWzUqIYtz1qjAvAvcnF3E
+id: feego_sys_content
+theme: feego_sys
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,44 @@
+uuid: a4a20dd4-33a1-4d12-96df-99e51b96925a
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.listado
+    - field.field.node.link_informativo.field_field_link_description
+    - field.field.node.link_informativo.field_link_type
+    - field.field.node.link_informativo.field_link_video
+    - field.field.node.link_informativo.field_tutorial_link
+    - node.type.link_informativo
+  module:
+    - options
+    - user
+id: node.link_informativo.listado
+targetEntityType: node
+bundle: link_informativo
+mode: listado
+content:
+  field_link_type:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_link_video:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_field_link_description: true
+  field_tutorial_link: true
+  langcode: true

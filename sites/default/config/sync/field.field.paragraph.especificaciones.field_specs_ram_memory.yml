@@ -1,0 +1,29 @@
+uuid: bc3676d8-fcd1-4943-93aa-05cc95eef336
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_specs_ram_memory
+    - paragraphs.paragraphs_type.especificaciones
+    - taxonomy.vocabulary.memoria_ram
+id: paragraph.especificaciones.field_specs_ram_memory
+field_name: field_specs_ram_memory
+entity_type: paragraph
+bundle: especificaciones
+label: RAM
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      memoria_ram: memoria_ram
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

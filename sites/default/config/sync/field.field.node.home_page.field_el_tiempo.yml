@@ -1,0 +1,46 @@
+uuid: 75f8cb7d-b518-43cc-810f-7d91451481c5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_el_tiempo
+    - node.type.home_page
+    - paragraphs.paragraphs_type.blck_page_information_1
+  module:
+    - entity_reference_revisions
+id: node.home_page.field_el_tiempo
+field_name: field_el_tiempo
+entity_type: node
+bundle: home_page
+label: 'El tiempo...'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      blck_page_information_1: blck_page_information_1
+    negate: 0
+    target_bundles_drag_drop:
+      blck_informativo_pagina_2:
+        weight: 7
+        enabled: false
+      blck_page_information_1:
+        weight: 6
+        enabled: true
+      equipment_image:
+        weight: 7
+        enabled: false
+      especificaciones:
+        weight: 8
+        enabled: false
+      page_service:
+        weight: 9
+        enabled: false
+      titulo_separador:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

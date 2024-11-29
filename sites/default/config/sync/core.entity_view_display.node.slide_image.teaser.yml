@@ -1,0 +1,23 @@
+uuid: fc55056c-9891-4815-bf5d-c043a352224e
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.slide_image.field_slide_banner_image
+    - node.type.slide_image
+  module:
+    - user
+id: node.slide_image.teaser
+targetEntityType: node
+bundle: slide_image
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_slide_banner_image: true
+  langcode: true

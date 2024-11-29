@@ -1,0 +1,29 @@
+uuid: d9369ea1-5fa9-4754-866d-28671ed48500
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_equipment_client
+    - node.type.cliente
+    - node.type.equipo
+id: node.equipo.field_equipment_client
+field_name: field_equipment_client
+entity_type: node
+bundle: equipo
+label: Cliente
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      cliente: cliente
+    sort:
+      field: title
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

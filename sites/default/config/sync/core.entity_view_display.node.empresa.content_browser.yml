@@ -1,0 +1,21 @@
+uuid: 3af046bc-c6de-456b-ab6e-cde83b4736ce
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.content_browser
+    - node.type.empresa
+  module:
+    - user
+id: node.empresa.content_browser
+targetEntityType: node
+bundle: empresa
+mode: content_browser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

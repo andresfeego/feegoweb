@@ -1,0 +1,43 @@
+uuid: 28992126-3b5a-4443-bc3e-bc7203ed9662
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_titulo_mantenimientos
+    - node.type.home_page
+    - paragraphs.paragraphs_type.titulo_separador
+  module:
+    - entity_reference_revisions
+id: node.home_page.field_titulo_mantenimientos
+field_name: field_titulo_mantenimientos
+entity_type: node
+bundle: home_page
+label: 'Título mantenimientos'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      titulo_separador: titulo_separador
+    negate: 0
+    target_bundles_drag_drop:
+      blck_page_information_1:
+        weight: 6
+        enabled: false
+      equipment_image:
+        weight: 7
+        enabled: false
+      especificaciones:
+        weight: 8
+        enabled: false
+      page_service:
+        weight: 9
+        enabled: false
+      titulo_separador:
+        weight: 10
+        enabled: true
+field_type: entity_reference_revisions

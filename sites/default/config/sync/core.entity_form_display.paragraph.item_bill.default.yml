@@ -1,0 +1,33 @@
+uuid: 11123642-b106-45f9-9345-a2782237b398
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.item_bill.field_item_bill
+    - field.field.paragraph.item_bill.field_valor
+    - paragraphs.paragraphs_type.item_bill
+id: paragraph.item_bill.default
+targetEntityType: paragraph
+bundle: item_bill
+mode: default
+content:
+  field_item_bill:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_valor:
+    type: number
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

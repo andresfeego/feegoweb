@@ -1,0 +1,9 @@
+uuid: e7958216-5198-4521-95e0-cb9b1eb49757
+langcode: es
+status: true
+dependencies: {  }
+name: Procesador
+vid: procesador
+description: null
+weight: -9
+new_revision: false

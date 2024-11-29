@@ -1,0 +1,29 @@
+uuid: 040cf1de-44d3-4ba1-9218-ea6ca495def3
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.link_informativo.field_field_link_description
+    - field.field.node.link_informativo.field_link_type
+    - field.field.node.link_informativo.field_link_video
+    - field.field.node.link_informativo.field_tutorial_link
+    - node.type.link_informativo
+  module:
+    - user
+id: node.link_informativo.teaser
+targetEntityType: node
+bundle: link_informativo
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_field_link_description: true
+  field_link_type: true
+  field_link_video: true
+  field_tutorial_link: true
+  langcode: true

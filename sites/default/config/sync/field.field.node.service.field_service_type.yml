@@ -1,0 +1,21 @@
+uuid: 39eba41c-42e2-4dd0-bae2-9adf558d7c21
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_service_type
+    - node.type.service
+  module:
+    - options
+id: node.service.field_service_type
+field_name: field_service_type
+entity_type: node
+bundle: service
+label: 'Tipo de servicio'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

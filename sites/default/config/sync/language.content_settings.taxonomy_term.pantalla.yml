@@ -1,0 +1,11 @@
+uuid: c7edf4bc-2d81-4633-a09e-6d8fb36182bc
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.pantalla
+id: taxonomy_term.pantalla
+target_entity_type_id: taxonomy_term
+target_bundle: pantalla
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,10 @@
+uuid: 20948ede-7e6d-49ee-a2c5-91b9b4b6b903
+langcode: es
+status: true
+dependencies: {  }
+id: blck_informativo_pagina_1
+label: 'Blck Informativo página 3'
+icon_uuid: null
+icon_default: null
+description: 'Imagen - título'
+behavior_plugins: {  }

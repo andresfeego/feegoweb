@@ -1,0 +1,19 @@
+uuid: c37e73cf-2d37-4d62-8de9-ccda93510b57
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_observations
+    - node.type.cliente
+id: node.cliente.field_observations
+field_name: field_observations
+entity_type: node
+bundle: cliente
+label: Observaciones
+description: 'Observaciones acerca del cliente.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

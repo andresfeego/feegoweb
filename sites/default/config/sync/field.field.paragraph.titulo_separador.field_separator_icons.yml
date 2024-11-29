@@ -1,0 +1,29 @@
+uuid: c68c0404-1354-4df7-835e-bf60ec116f65
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_separator_icons
+    - media.type.image
+    - paragraphs.paragraphs_type.titulo_separador
+id: paragraph.titulo_separador.field_separator_icons
+field_name: field_separator_icons
+entity_type: paragraph
+bundle: titulo_separador
+label: 'Iconos separador'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

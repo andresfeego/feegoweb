@@ -1,0 +1,45 @@
+uuid: 42c4e9e1-1936-452e-a908-dace8099253c
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_service_state
+field_name: field_service_state
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: AB
+      label: Abierto
+    -
+      value: AS
+      label: Asignado
+    -
+      value: EE
+      label: 'En espera'
+    -
+      value: PR
+      label: 'Por repuestos'
+    -
+      value: RE
+      label: Resuelta
+    -
+      value: PC
+      label: 'Por cobrar'
+    -
+      value: CR
+      label: Cerrada
+    -
+      value: RCH
+      label: Rechazada
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

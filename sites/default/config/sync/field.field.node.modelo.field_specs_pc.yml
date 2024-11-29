@@ -1,0 +1,34 @@
+uuid: 538988e8-c77d-487c-a1a2-d83e80d5cfa2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_specs_pc
+    - node.type.modelo
+    - paragraphs.paragraphs_type.especificaciones
+  module:
+    - entity_reference_revisions
+id: node.modelo.field_specs_pc
+field_name: field_specs_pc
+entity_type: node
+bundle: modelo
+label: 'Especificaciones PC'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      especificaciones: especificaciones
+    negate: 0
+    target_bundles_drag_drop:
+      equipment_image:
+        weight: 3
+        enabled: false
+      especificaciones:
+        weight: 4
+        enabled: true
+field_type: entity_reference_revisions

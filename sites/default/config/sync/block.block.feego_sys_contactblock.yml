@@ -1,0 +1,29 @@
+uuid: befd5352-0413-41b7-a3ea-0d802aef56c7
+langcode: es
+status: true
+dependencies:
+  config:
+    - contact.form.contactenos_footer
+  module:
+    - contact_block
+    - system
+  theme:
+    - feego_sys
+id: feego_sys_contactblock
+theme: feego_sys
+region: footer_first
+weight: 0
+provider: null
+plugin: contact_block
+settings:
+  id: contact_block
+  label: Contáctanos
+  label_display: visible
+  provider: contact_block
+  contact_form: contactenos_footer
+  form_display: default
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

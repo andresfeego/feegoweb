@@ -1,0 +1,19 @@
+uuid: 71c4e5be-519d-4db7-b57f-af0a48883777
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_time_stamp
+    - paragraphs.paragraphs_type.equipment_image
+id: paragraph.equipment_image.field_time_stamp
+field_name: field_time_stamp
+entity_type: paragraph
+bundle: equipment_image
+label: 'Fecha y hora'
+description: 'Fecha y hora de captura de la imagen'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

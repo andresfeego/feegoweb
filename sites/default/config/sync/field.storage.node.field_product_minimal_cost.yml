@@ -1,0 +1,20 @@
+uuid: fd158537-abd7-4846-a1d4-c0fe625b2285
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_product_minimal_cost
+field_name: field_product_minimal_cost
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,19 @@
+uuid: 554eb716-addd-4bd8-a0ed-9e019f9e157d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_service_obs
+    - node.type.service
+id: node.service.field_service_obs
+field_name: field_service_obs
+entity_type: node
+bundle: service
+label: Observaciones
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

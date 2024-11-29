@@ -1,0 +1,19 @@
+uuid: fb4f84f0-41a3-432e-82ca-193f0279bad3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_news
+    - node.type.service
+id: node.service.field_news
+field_name: field_news
+entity_type: node
+bundle: service
+label: Novedad
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

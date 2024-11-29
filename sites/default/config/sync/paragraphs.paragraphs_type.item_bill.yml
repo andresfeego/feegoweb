@@ -1,0 +1,10 @@
+uuid: 5fcfda83-6887-4056-bdb9-3877f8a3bbd3
+langcode: es
+status: true
+dependencies: {  }
+id: item_bill
+label: 'Item factura'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

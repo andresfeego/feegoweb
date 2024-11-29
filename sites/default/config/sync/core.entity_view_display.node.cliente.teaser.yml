@@ -1,0 +1,70 @@
+uuid: be797e3e-4522-4bed-b87d-a2c765ae5912
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.cliente.field_activity
+    - field.field.node.cliente.field_company
+    - field.field.node.cliente.field_id_number
+    - field.field.node.cliente.field_mail
+    - field.field.node.cliente.field_observations
+    - field.field.node.cliente.field_phone
+    - field.field.node.cliente.field_professional
+    - node.type.cliente
+  module:
+    - fontawesome_iconpicker
+    - user
+id: node.cliente.teaser
+targetEntityType: node
+bundle: cliente
+mode: teaser
+content:
+  field_activity:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_company:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_mail:
+    type: fontawesome_iconpicker_formatter_type
+    label: hidden
+    settings:
+      size: fa-1x
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_phone:
+    type: number_decimal
+    label: hidden
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 0
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_professional:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  field_id_number: true
+  field_observations: true
+  langcode: true
+  links: true

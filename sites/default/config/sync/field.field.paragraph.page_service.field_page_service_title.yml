@@ -1,0 +1,19 @@
+uuid: f2921cce-1e32-4746-bd20-6a269b6d22c9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_page_service_title
+    - paragraphs.paragraphs_type.page_service
+id: paragraph.page_service.field_page_service_title
+field_name: field_page_service_title
+entity_type: paragraph
+bundle: page_service
+label: Título
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

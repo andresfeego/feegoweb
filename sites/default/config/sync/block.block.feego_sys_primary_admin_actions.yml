@@ -1,0 +1,20 @@
+uuid: 7a07358c-c36b-4e79-a820-e3248685d241
+langcode: en
+status: true
+dependencies:
+  theme:
+    - feego_sys
+_core:
+  default_config_hash: 7IceAEPwG-4IOO-DX4PIowID3wKkt3qAyfORheABdDc
+id: feego_sys_primary_admin_actions
+theme: feego_sys
+region: content
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,17 @@
+uuid: e6184f47-6b25-473a-a9a6-cf551c10d5aa
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Marca
+type: marca
+description: 'Marcas de equipos de tecnología.'
+help: null
+new_revision: true
+preview_mode: 0
+display_submitted: true

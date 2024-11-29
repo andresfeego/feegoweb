@@ -1,0 +1,29 @@
+uuid: 23893dfc-6fe4-4c3d-86f7-5aa69e6fad9c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_gpu
+    - paragraphs.paragraphs_type.especificaciones
+    - taxonomy.vocabulary.gpu
+id: paragraph.especificaciones.field_gpu
+field_name: field_gpu
+entity_type: paragraph
+bundle: especificaciones
+label: GPU
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      gpu: gpu
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

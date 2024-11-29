@@ -1,0 +1,25 @@
+uuid: f98dec21-0275-4732-8ea7-277c0dab8da0
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - feego_sys
+_core:
+  default_config_hash: gTVEBg1z2X7gtd0BFBq_lBIcM5nUCjULqASwHu-8hDQ
+id: feego_sys_site_branding
+theme: feego_sys
+region: header
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

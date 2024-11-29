@@ -1,0 +1,9 @@
+uuid: 703fe75b-d6ed-413d-a17b-c40e3f77781c
+langcode: es
+status: true
+dependencies: {  }
+name: GPU
+vid: gpu
+description: 'Tarjetas gráficas'
+weight: -6
+new_revision: false

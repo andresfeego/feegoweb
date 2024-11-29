@@ -1,0 +1,11 @@
+uuid: 67194678-2d74-4f37-8d35-ea9d37320bc1
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipos_de_modelo
+id: taxonomy_term.tipos_de_modelo
+target_entity_type_id: taxonomy_term
+target_bundle: tipos_de_modelo
+default_langcode: site_default
+language_alterable: false

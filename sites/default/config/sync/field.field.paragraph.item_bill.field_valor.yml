@@ -1,0 +1,23 @@
+uuid: 588594a5-beb1-4040-9005-81b9fb8b5f84
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_valor
+    - paragraphs.paragraphs_type.item_bill
+id: paragraph.item_bill.field_valor
+field_name: field_valor
+entity_type: paragraph
+bundle: item_bill
+label: Valor
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

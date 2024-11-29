@@ -1,0 +1,21 @@
+uuid: 6949726b-0ff4-41b2-a9e7-3a4398cade51
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_type
+    - node.type.link_informativo
+  module:
+    - options
+id: node.link_informativo.field_link_type
+field_name: field_link_type
+entity_type: node
+bundle: link_informativo
+label: Tipo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

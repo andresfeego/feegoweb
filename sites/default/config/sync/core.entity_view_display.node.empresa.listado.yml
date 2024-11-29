@@ -1,0 +1,21 @@
+uuid: a889723f-a3ec-428c-b8ff-5f5a83245637
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.listado
+    - node.type.empresa
+  module:
+    - user
+id: node.empresa.listado
+targetEntityType: node
+bundle: empresa
+mode: listado
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

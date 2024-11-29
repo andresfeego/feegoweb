@@ -1,0 +1,11 @@
+uuid: 364a4677-c306-4ab7-b8d7-f14bbfbef6f0
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.marca
+id: node.marca
+target_entity_type_id: node
+target_bundle: marca
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,45 @@
+uuid: 3b139097-2b7c-45a2-81c1-a604f843b90f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.marca.field_extended_logo
+    - field.field.node.marca.field_logo
+    - node.type.marca
+  module:
+    - image
+    - user
+id: node.marca.default
+targetEntityType: node
+bundle: marca
+mode: default
+content:
+  field_extended_logo:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_logo:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

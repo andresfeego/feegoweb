@@ -1,0 +1,29 @@
+uuid: 8dd1a02c-271d-46e1-8535-6f90c1680d36
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_max_ram
+    - paragraphs.paragraphs_type.especificaciones
+    - taxonomy.vocabulary.max_ram
+id: paragraph.especificaciones.field_max_ram
+field_name: field_max_ram
+entity_type: paragraph
+bundle: especificaciones
+label: 'Max RAM'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      max_ram: max_ram
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

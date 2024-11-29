@@ -1,0 +1,25 @@
+uuid: 5a8ca0aa-4bab-4a32-9441-e5ecc59211f0
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.sales.field_item_sales
+    - field.field.node.sales.field_news
+    - node.type.sales
+  module:
+    - user
+id: node.sales.teaser
+targetEntityType: node
+bundle: sales
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_item_sales: true
+  field_news: true
+  langcode: true

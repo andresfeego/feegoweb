@@ -1,0 +1,49 @@
+uuid: 79290d00-5b57-47a1-9535-0dac6c1b26bc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_web_page_title
+    - node.type.home_page
+    - paragraphs.paragraphs_type.titulo_separador
+  module:
+    - entity_reference_revisions
+id: node.home_page.field_web_page_title
+field_name: field_web_page_title
+entity_type: node
+bundle: home_page
+label: 'Título páginas web'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      titulo_separador: titulo_separador
+    negate: 0
+    target_bundles_drag_drop:
+      blck_informativo_pagina_1:
+        weight: 8
+        enabled: false
+      blck_informativo_pagina_2:
+        weight: 9
+        enabled: false
+      blck_page_information_1:
+        weight: 10
+        enabled: false
+      equipment_image:
+        weight: 11
+        enabled: false
+      especificaciones:
+        weight: 12
+        enabled: false
+      page_service:
+        weight: 13
+        enabled: false
+      titulo_separador:
+        weight: 14
+        enabled: true
+field_type: entity_reference_revisions

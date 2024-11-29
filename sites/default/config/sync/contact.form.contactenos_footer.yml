@@ -1,0 +1,14 @@
+uuid: bb4bacb1-b25e-44db-a1f9-59d31aa7c3f7
+langcode: es
+status: true
+dependencies: {  }
+id: contactenos_footer
+label: 'Contactenos footer'
+recipients:
+  - gerencia@feegosystem.com
+  - contacto@feegosystem.com
+  - andres.feego@gmail.com
+reply: "Hola, recibimos tu mensaje, en breve nos pondremos en contacto contigo.\r\n\r\nMuchas gracias por creer en nosotros.\r\n\r\nAndres Manrique\r\nGerente Feego System"
+weight: 0
+message: 'Hemos recibido tu mensaje'
+redirect: ''

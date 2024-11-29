@@ -1,0 +1,12 @@
+uuid: 83efa9cf-b097-4b53-8112-f3358923b73f
+langcode: es
+status: true
+dependencies: {  }
+id: berlin
+label: Berlin
+font_url: 'local_fonts://berlin'
+fallback: ''
+selectors: .fontyourface
+theme: feego_sys
+style: null
+weight: null

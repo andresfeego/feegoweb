@@ -1,0 +1,21 @@
+uuid: 21b6cebf-3405-4740-9d35-71de5df1ecd7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact_channel
+    - node.type.solicitud
+  module:
+    - options
+id: node.solicitud.field_contact_channel
+field_name: field_contact_channel
+entity_type: node
+bundle: solicitud
+label: 'Canal de contacto'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

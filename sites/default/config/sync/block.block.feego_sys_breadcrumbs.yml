@@ -1,0 +1,26 @@
+uuid: d99c6e12-3462-4113-ae66-7507f572121b
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - feego_sys
+_core:
+  default_config_hash: qTmfMrKxbfqA7SY9xGV07ZLIQIw_A-Rrq2D7FGPtnHI
+id: feego_sys_breadcrumbs
+theme: feego_sys
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

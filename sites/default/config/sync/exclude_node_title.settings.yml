@@ -1,0 +1,47 @@
+_core:
+  default_config_hash: 0yJNd4uWv8TzhYEPQBDiApPL2e8ar88kBmQrzDjNCqc
+nid_list: {  }
+translation_sync: true
+search: false
+type: remove
+content_types:
+  article: none
+  banner_header_image: all
+  cliente: none
+  contact_data: none
+  empresa: none
+  equipo: none
+  home_page: none
+  link_informativo: none
+  marca: none
+  modelo: none
+  page: none
+  product: none
+  service: none
+  slide_image: all
+  solicitud: none
+content_type_modes:
+  article: {  }
+  banner_header_image:
+    - content_browser
+    - full
+    - listado
+    - rss
+    - search_index
+    - search_result
+    - teaser
+    - token
+  cliente: {  }
+  contact_data: {  }
+  empresa: {  }
+  equipo: {  }
+  home_page: {  }
+  link_informativo: {  }
+  marca: {  }
+  modelo: {  }
+  page: {  }
+  product: {  }
+  service: {  }
+  slide_image:
+    - nodeform
+  solicitud: {  }

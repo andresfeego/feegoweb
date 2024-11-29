@@ -1,0 +1,29 @@
+uuid: f7a30fca-8b1f-436c-8cf2-cb1f64b0c4eb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_model_link
+    - node.type.link_informativo
+    - node.type.modelo
+id: node.modelo.field_model_link
+field_name: field_model_link
+entity_type: node
+bundle: modelo
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      link_informativo: link_informativo
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

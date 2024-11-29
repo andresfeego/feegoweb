@@ -1,0 +1,121 @@
+uuid: 7c857c9d-6b4f-499b-b736-8cda60ccff43
+langcode: es
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.browse_content
+    - entity_browser.browser.browse_content_iframe
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - node.type.cliente
+    - node.type.empresa
+    - node.type.equipo
+    - node.type.link_informativo
+    - node.type.marca
+    - node.type.modelo
+    - node.type.product
+    - node.type.sales
+    - node.type.service
+    - node.type.solicitud
+  module:
+    - entity_browser
+    - entity_reference_revisions
+    - exclude_node_title
+    - field_ui
+    - media
+    - node
+    - paragraphs
+    - paragraphs_type_permissions
+id: tecnico
+label: Técnico
+weight: 4
+is_admin: null
+permissions:
+  - 'access browse_content entity browser pages'
+  - 'access browse_content_iframe entity browser pages'
+  - 'access media overview'
+  - 'administer entity browsers'
+  - 'administer media'
+  - 'administer media types'
+  - 'administer paragraph display'
+  - 'administer paragraph fields'
+  - 'administer paragraph form display'
+  - 'bypass paragraphs type content access'
+  - 'create audio media'
+  - 'create cliente content'
+  - 'create document media'
+  - 'create empresa content'
+  - 'create equipo content'
+  - 'create image media'
+  - 'create link_informativo content'
+  - 'create marca content'
+  - 'create media'
+  - 'create modelo content'
+  - 'create paragraph content especificaciones'
+  - 'create product content'
+  - 'create remote_video media'
+  - 'create sales content'
+  - 'create service content'
+  - 'create solicitud content'
+  - 'create video media'
+  - 'delete any audio media'
+  - 'delete any audio media revisions'
+  - 'delete any document media'
+  - 'delete any document media revisions'
+  - 'delete any image media'
+  - 'delete any image media revisions'
+  - 'delete any media'
+  - 'delete any remote_video media'
+  - 'delete any remote_video media revisions'
+  - 'delete any video media'
+  - 'delete any video media revisions'
+  - 'delete media'
+  - 'delete orphan revisions'
+  - 'delete own audio media'
+  - 'delete own document media'
+  - 'delete own image media'
+  - 'delete own remote_video media'
+  - 'delete own video media'
+  - 'delete paragraph content especificaciones'
+  - 'edit any audio media'
+  - 'edit any cliente content'
+  - 'edit any document media'
+  - 'edit any empresa content'
+  - 'edit any equipo content'
+  - 'edit any image media'
+  - 'edit any link_informativo content'
+  - 'edit any marca content'
+  - 'edit any modelo content'
+  - 'edit any product content'
+  - 'edit any remote_video media'
+  - 'edit any sales content'
+  - 'edit any service content'
+  - 'edit any solicitud content'
+  - 'edit any video media'
+  - 'edit own audio media'
+  - 'edit own document media'
+  - 'edit own image media'
+  - 'edit own remote_video media'
+  - 'edit own video media'
+  - 'exclude own node title'
+  - 'revert any audio media revisions'
+  - 'revert any document media revisions'
+  - 'revert any image media revisions'
+  - 'revert any remote_video media revisions'
+  - 'revert any video media revisions'
+  - 'update any media'
+  - 'update media'
+  - 'update paragraph content especificaciones'
+  - 'view all media revisions'
+  - 'view any audio media revisions'
+  - 'view any document media revisions'
+  - 'view any image media revisions'
+  - 'view any remote_video media revisions'
+  - 'view any video media revisions'
+  - 'view equipo revisions'
+  - 'view media'
+  - 'view own unpublished media'
+  - 'view paragraph content especificaciones'

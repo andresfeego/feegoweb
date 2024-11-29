@@ -1,0 +1,9 @@
+uuid: e22eef76-86c1-4390-baa8-c50e3717daf1
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipos de modelo'
+vid: tipos_de_modelo
+description: null
+weight: 0
+new_revision: false

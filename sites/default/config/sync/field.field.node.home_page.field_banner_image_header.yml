@@ -1,0 +1,29 @@
+uuid: 60486e55-294e-4ad0-b52f-477845161e6b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_banner_image_header
+    - node.type.banner_header_image
+    - node.type.home_page
+id: node.home_page.field_banner_image_header
+field_name: field_banner_image_header
+entity_type: node
+bundle: home_page
+label: 'Banner imagen encabezado'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      banner_header_image: banner_header_image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

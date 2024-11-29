@@ -1,0 +1,66 @@
+uuid: 61f6817c-c924-462a-a038-c9a14988cadd
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.especificaciones.field_gpu
+    - field.field.paragraph.especificaciones.field_max_ram
+    - field.field.paragraph.especificaciones.field_screen
+    - field.field.paragraph.especificaciones.field_specs_processor
+    - field.field.paragraph.especificaciones.field_specs_ram_memory
+    - field.field.paragraph.especificaciones.field_storage
+    - paragraphs.paragraphs_type.especificaciones
+id: paragraph.especificaciones.default
+targetEntityType: paragraph
+bundle: especificaciones
+mode: default
+content:
+  field_gpu:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_max_ram:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_screen:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_specs_processor:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_specs_ram_memory:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_storage:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden: {  }

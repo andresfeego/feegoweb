@@ -1,0 +1,29 @@
+uuid: 97a5b704-a8c0-446a-949a-a9681f30c81b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_block3
+    - media.type.image
+    - paragraphs.paragraphs_type.blck_informativo_pagina_1
+id: paragraph.blck_informativo_pagina_1.field_image_block3
+field_name: field_image_block3
+entity_type: paragraph
+bundle: blck_informativo_pagina_1
+label: Imagen
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

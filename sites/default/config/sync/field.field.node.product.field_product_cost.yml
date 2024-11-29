@@ -1,0 +1,23 @@
+uuid: 3bfe19d2-6e4b-4023-bf1b-d18a8f9ba0ad
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_product_cost
+    - node.type.product
+id: node.product.field_product_cost
+field_name: field_product_cost
+entity_type: node
+bundle: product
+label: Valor
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: $
+  suffix: ''
+field_type: integer

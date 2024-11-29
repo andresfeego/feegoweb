@@ -1,0 +1,11 @@
+uuid: 39890a50-07c4-4a5b-966a-972d88eb6c40
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.equipo
+id: node.equipo
+target_entity_type_id: node
+target_bundle: equipo
+default_langcode: site_default
+language_alterable: false

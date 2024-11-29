@@ -1,0 +1,18 @@
+uuid: 58de8aff-9ac3-4e2c-a3a4-ec5b56298d83
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_time_stamp
+field_name: field_time_stamp
+entity_type: paragraph
+type: timestamp
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

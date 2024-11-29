@@ -1,0 +1,21 @@
+uuid: a11f1a2b-6c2e-4225-be32-a66e9f23e903
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_model_specs
+    - node.type.modelo
+  module:
+    - text
+id: node.modelo.field_model_specs
+field_name: field_model_specs
+entity_type: node
+bundle: modelo
+label: Especificaciones
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

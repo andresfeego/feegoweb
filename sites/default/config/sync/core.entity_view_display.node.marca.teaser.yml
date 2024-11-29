@@ -1,0 +1,25 @@
+uuid: f15bb207-19ec-4532-a792-9f9ced75750a
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.marca.field_extended_logo
+    - field.field.node.marca.field_logo
+    - node.type.marca
+  module:
+    - user
+id: node.marca.teaser
+targetEntityType: node
+bundle: marca
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_extended_logo: true
+  field_logo: true
+  langcode: true

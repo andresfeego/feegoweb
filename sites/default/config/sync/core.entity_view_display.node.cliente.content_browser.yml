@@ -1,0 +1,35 @@
+uuid: 836a18a3-c368-4e28-b2f6-dc6dd0d29958
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.content_browser
+    - field.field.node.cliente.field_activity
+    - field.field.node.cliente.field_company
+    - field.field.node.cliente.field_id_number
+    - field.field.node.cliente.field_mail
+    - field.field.node.cliente.field_observations
+    - field.field.node.cliente.field_phone
+    - field.field.node.cliente.field_professional
+    - node.type.cliente
+  module:
+    - user
+id: node.cliente.content_browser
+targetEntityType: node
+bundle: cliente
+mode: content_browser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_activity: true
+  field_company: true
+  field_id_number: true
+  field_mail: true
+  field_observations: true
+  field_phone: true
+  field_professional: true
+  langcode: true

@@ -1,0 +1,23 @@
+uuid: 842a8a89-0907-4307-b170-04baf90176c4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_phone
+    - node.type.cliente
+id: node.cliente.field_phone
+field_name: field_phone
+entity_type: node
+bundle: cliente
+label: Teléfono
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

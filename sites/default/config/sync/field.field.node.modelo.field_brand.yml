@@ -1,0 +1,29 @@
+uuid: bcda17d8-95e5-4f1d-8e44-36bb922a72a0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_brand
+    - node.type.marca
+    - node.type.modelo
+id: node.modelo.field_brand
+field_name: field_brand
+entity_type: node
+bundle: modelo
+label: Marca
+description: 'Marca del equipo '
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      marca: marca
+    sort:
+      field: title
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

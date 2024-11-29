@@ -1,0 +1,20 @@
+uuid: 37aaa982-c2d9-4252-b3e6-deae4deab3ab
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - taxonomy
+id: paragraph.field_specs_ram_memory
+field_name: field_specs_ram_memory
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

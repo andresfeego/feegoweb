@@ -1,0 +1,17 @@
+uuid: 6e910624-732d-4080-9eb4-5b1c6078599f
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Cliente
+type: cliente
+description: 'Clientes Feego '
+help: null
+new_revision: true
+preview_mode: 0
+display_submitted: false

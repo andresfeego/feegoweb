@@ -1,0 +1,8 @@
+uuid: b8f86b72-b096-4d1c-ad97-ca16789a9d0f
+langcode: es
+status: true
+dependencies: {  }
+id: admin-side-right-menu
+label: 'Menú Técnico administración'
+description: 'Menu lateral administrativo solo para usuarios administrativos feego'
+locked: false

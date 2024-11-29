@@ -1,0 +1,78 @@
+uuid: 15c816e0-3012-4a30-8d76-6e8d57e335de
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.listado
+    - field.field.node.cliente.field_activity
+    - field.field.node.cliente.field_company
+    - field.field.node.cliente.field_id_number
+    - field.field.node.cliente.field_mail
+    - field.field.node.cliente.field_observations
+    - field.field.node.cliente.field_phone
+    - field.field.node.cliente.field_professional
+    - node.type.cliente
+  module:
+    - user
+id: node.cliente.listado
+targetEntityType: node
+bundle: cliente
+mode: listado
+content:
+  field_activity:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_company:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_id_number:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_mail:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_observations:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_professional:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_phone: true
+  langcode: true

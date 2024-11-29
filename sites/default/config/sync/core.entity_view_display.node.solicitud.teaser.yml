@@ -1,0 +1,33 @@
+uuid: b2d59fc1-c839-4671-aadd-65468fe2ce3f
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.solicitud.field_contact_channel
+    - field.field.node.solicitud.field_news
+    - field.field.node.solicitud.field_request_client
+    - field.field.node.solicitud.field_request_equipment
+    - field.field.node.solicitud.field_request_state
+    - field.field.node.solicitud.field_requested_service
+    - node.type.solicitud
+  module:
+    - user
+id: node.solicitud.teaser
+targetEntityType: node
+bundle: solicitud
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_contact_channel: true
+  field_news: true
+  field_request_client: true
+  field_request_equipment: true
+  field_request_state: true
+  field_requested_service: true
+  langcode: true

@@ -1,0 +1,11 @@
+uuid: 84656852-6845-4fa8-af19-fd7a93515010
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.listado
+label: Listado
+description: 'Visualización en listados administrativo'
+targetEntityType: node
+cache: true

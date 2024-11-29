@@ -1,0 +1,23 @@
+uuid: c5492e3f-451b-4a1a-b040-9cfea9ceb49c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_model_links
+    - node.type.modelo
+  module:
+    - link
+id: node.modelo.field_model_links
+field_name: field_model_links
+entity_type: node
+bundle: modelo
+label: Enlace
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 17
+field_type: link

@@ -1,0 +1,17 @@
+uuid: 9aab6027-43c3-4c3c-87bc-7ef56cb93acc
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Solicitud
+type: solicitud
+description: 'Solicitudes de servicio'
+help: null
+new_revision: true
+preview_mode: 0
+display_submitted: true

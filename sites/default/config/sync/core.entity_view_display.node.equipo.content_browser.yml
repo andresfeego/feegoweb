@@ -1,0 +1,44 @@
+uuid: f714a06a-711e-44c9-af26-cbaf4f2bdd1b
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.content_browser
+    - field.field.node.equipo.field_equipment_client
+    - field.field.node.equipo.field_equipment_image
+    - field.field.node.equipo.field_equipment_model
+    - field.field.node.equipo.field_equipment_obs
+    - field.field.node.equipo.field_equipment_obs_tec
+    - field.field.node.equipo.field_equipment_specs
+    - field.field.node.equipo.field_productmanufactureid
+    - field.field.node.equipo.field_serial_number
+    - node.type.equipo
+  module:
+    - user
+id: node.equipo.content_browser
+targetEntityType: node
+bundle: equipo
+mode: content_browser
+content:
+  field_equipment_client:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_equipment_image: true
+  field_equipment_model: true
+  field_equipment_obs: true
+  field_equipment_obs_tec: true
+  field_equipment_specs: true
+  field_productmanufactureid: true
+  field_serial_number: true
+  langcode: true

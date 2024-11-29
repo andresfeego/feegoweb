@@ -1,0 +1,29 @@
+uuid: f9b99250-1078-4b97-ad6f-4bcab638e6a2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_equipment_model
+    - node.type.equipo
+    - node.type.modelo
+id: node.equipo.field_equipment_model
+field_name: field_equipment_model
+entity_type: node
+bundle: equipo
+label: Modelo
+description: 'Modelo del equipo.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      modelo: modelo
+    sort:
+      field: field_brand
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

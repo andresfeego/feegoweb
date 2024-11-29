@@ -1,0 +1,41 @@
+uuid: b71f87ff-339b-40c4-aacc-4fd124773aa6
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - comment
+    - contact
+    - exclude_node_title
+    - field_permissions
+    - filter
+    - fontawesome
+    - media
+    - search
+    - shortcut
+    - system
+_core:
+  default_config_hash: I44QAB4es39lNzMQWiJLq2dfjX7VRSOzT_5KzAcUq_M
+id: authenticated
+label: 'Usuario autenticado'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access fontawesome additional settings'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use exclude node title'
+  - 'use text format basic_html'
+  - 'view field_grid_service_image'
+  - 'view field_web_image_grid'
+  - 'view field_you_know_that'
+  - 'view media'
+  - 'view own field_grid_service_image'
+  - 'view own field_web_image_grid'
+  - 'view own field_you_know_that'

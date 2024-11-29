@@ -1,0 +1,23 @@
+uuid: 70359ff0-28e5-49c8-ac9a-63dbcdb1bb68
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagen_equipo
+    - node.type.modelo
+id: node.modelo.field_imagen_equipo
+field_name: field_imagen_equipo
+entity_type: node
+bundle: modelo
+label: 'Imagen equipo'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Imagen Creada'
+  off_label: 'Sin imagen'
+field_type: boolean

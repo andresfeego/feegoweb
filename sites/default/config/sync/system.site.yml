@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: es
+uuid: 905e36cf-ffe0-41bb-bbb9-09e43ed2a996
+name: 'Feego system'
+mail: andres.feego@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/21
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: es

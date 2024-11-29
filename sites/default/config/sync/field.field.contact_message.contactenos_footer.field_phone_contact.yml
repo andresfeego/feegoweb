@@ -1,0 +1,19 @@
+uuid: b62bbc82-3f59-4258-81f6-334b4b5d4557
+langcode: es
+status: true
+dependencies:
+  config:
+    - contact.form.contactenos_footer
+    - field.storage.contact_message.field_phone_contact
+id: contact_message.contactenos_footer.field_phone_contact
+field_name: field_phone_contact
+entity_type: contact_message
+bundle: contactenos_footer
+label: Teléfono
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

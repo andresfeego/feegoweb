@@ -1,0 +1,9 @@
+uuid: 50038811-c82d-4fc5-9645-0b55d0b17618
+langcode: es
+status: true
+dependencies: {  }
+name: 'Max RAM'
+vid: max_ram
+description: null
+weight: -7
+new_revision: false

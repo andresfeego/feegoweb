@@ -1,0 +1,29 @@
+uuid: 49d58b33-dde2-4cf5-ad00-2428761b2055
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_professional
+    - node.type.cliente
+id: node.cliente.field_professional
+field_name: field_professional
+entity_type: node
+bundle: cliente
+label: Profesional
+description: 'Profesional Feego que atiende las solicitudes de este cliente de forma recurrente.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    filter:
+      type: _none
+    include_anonymous: false
+field_type: entity_reference

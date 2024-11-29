@@ -1,0 +1,23 @@
+uuid: e8622704-b104-43e1-9a90-d3025217f026
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_quotation_web
+    - node.type.home_page
+  module:
+    - link
+id: node.home_page.field_quotation_web
+field_name: field_quotation_web
+entity_type: node
+bundle: home_page
+label: 'Cotización web'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

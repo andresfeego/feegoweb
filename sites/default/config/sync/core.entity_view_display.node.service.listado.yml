@@ -1,0 +1,91 @@
+uuid: 2b212f2b-06aa-4b11-b37e-16ecd0ecd460
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.listado
+    - field.field.node.service.field_asigned_to
+    - field.field.node.service.field_equipment_service
+    - field.field.node.service.field_news
+    - field.field.node.service.field_private_service_obs
+    - field.field.node.service.field_request
+    - field.field.node.service.field_service
+    - field.field.node.service.field_service_obs
+    - field.field.node.service.field_service_state
+    - field.field.node.service.field_service_type
+    - node.type.service
+  module:
+    - options
+    - user
+id: node.service.listado
+targetEntityType: node
+bundle: service
+mode: listado
+content:
+  field_asigned_to:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_equipment_service:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_private_service_obs:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_request:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_service:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_service_obs:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  field_service_state:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_service_type:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_news: true
+  langcode: true

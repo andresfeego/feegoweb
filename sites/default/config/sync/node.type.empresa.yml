@@ -1,0 +1,17 @@
+uuid: 4a3fadfc-a1fe-45ef-a059-cd5f3edb8091
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Empresa
+type: empresa
+description: Empresa
+help: null
+new_revision: true
+preview_mode: 0
+display_submitted: true

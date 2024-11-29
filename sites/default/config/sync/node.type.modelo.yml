@@ -1,0 +1,17 @@
+uuid: cdea7d96-9b25-4d86-889e-55a02b5bdd92
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Modelo
+type: modelo
+description: 'Modelo de equipo '
+help: null
+new_revision: true
+preview_mode: 0
+display_submitted: true

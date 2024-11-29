@@ -1,0 +1,9 @@
+uuid: a9230b4c-2fea-4a5d-82b8-7ea8be2ff90d
+langcode: es
+status: true
+dependencies: {  }
+name: Pantalla
+vid: pantalla
+description: 'Tipo y tamaño de pantalla'
+weight: -10
+new_revision: false

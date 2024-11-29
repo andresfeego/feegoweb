@@ -1,0 +1,295 @@
+uuid: e9d5696f-3f18-48a3-a5f9-d1808739a4f8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.home_page.field_banner_image_header
+    - field.field.node.home_page.field_brand_slide
+    - field.field.node.home_page.field_el_tiempo
+    - field.field.node.home_page.field_experience
+    - field.field.node.home_page.field_field_home_services
+    - field.field.node.home_page.field_grid_service_image
+    - field.field.node.home_page.field_payment_method
+    - field.field.node.home_page.field_product_slide
+    - field.field.node.home_page.field_quotation_web
+    - field.field.node.home_page.field_sales_title
+    - field.field.node.home_page.field_schedule
+    - field.field.node.home_page.field_schedule_title
+    - field.field.node.home_page.field_service_mantence_title
+    - field.field.node.home_page.field_ssd_video
+    - field.field.node.home_page.field_titulo_mantenimientos
+    - field.field.node.home_page.field_view_all_products
+    - field.field.node.home_page.field_web_description_2
+    - field.field.node.home_page.field_web_image_grid
+    - field.field.node.home_page.field_web_page_description
+    - field.field.node.home_page.field_web_page_title
+    - field.field.node.home_page.field_you_know_that
+    - node.type.home_page
+  module:
+    - entity_reference_revisions
+    - field_group
+    - link
+    - user
+third_party_settings:
+  field_group:
+    group_titulo_web_home:
+      children:
+        - field_web_page_title
+      label: titulo-web-home
+      parent_name: ''
+      region: content
+      weight: 11
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: web
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_titulo_mantenimientos:
+      children:
+        - field_titulo_mantenimientos
+      label: titulo-mantenimientos
+      parent_name: ''
+      region: content
+      weight: 4
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: mantenimientos
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_titulo_ventas:
+      children:
+        - field_sales_title
+      label: titulo-ventas
+      parent_name: ''
+      region: content
+      weight: 16
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ventas
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: node.home_page.default
+targetEntityType: node
+bundle: home_page
+mode: default
+content:
+  field_banner_image_header:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_brand_slide:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_el_tiempo:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_experience:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_field_home_services:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_grid_service_image:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_payment_method:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 22
+    region: content
+  field_product_slide:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 18
+    region: content
+  field_quotation_web:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 15
+    region: content
+  field_sales_title:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 17
+    region: content
+  field_schedule:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 21
+    region: content
+  field_schedule_title:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 20
+    region: content
+  field_service_mantence_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_ssd_video:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: autoplay
+      link: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_titulo_mantenimientos:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_view_all_products:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 19
+    region: content
+  field_web_description_2:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  field_web_image_grid:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  field_web_page_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_web_page_title:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_you_know_that:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

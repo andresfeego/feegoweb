@@ -1,0 +1,27 @@
+uuid: 693fdc20-5252-4e75-81c7-b1a9426e295b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_published_market
+field_name: field_published_market
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: FB
+      label: 'Facebook market place'
+    -
+      value: ML
+      label: Mercadolibre
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

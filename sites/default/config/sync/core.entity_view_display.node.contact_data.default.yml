@@ -1,0 +1,50 @@
+uuid: 41a26d5f-eec2-406c-b605-f4433dc09223
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.contact_data.field_address
+    - field.field.node.contact_data.field_mail
+    - field.field.node.contact_data.field_phone
+    - node.type.contact_data
+  module:
+    - user
+id: node.contact_data.default
+targetEntityType: node
+bundle: contact_data
+mode: default
+content:
+  field_address:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_mail:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_phone:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 0
+      prefix_suffix: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

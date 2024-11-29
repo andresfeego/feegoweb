@@ -1,0 +1,53 @@
+uuid: 0564ea0f-d7e6-448d-8168-805f42eacae4
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.content_browser
+    - field.field.node.solicitud.field_contact_channel
+    - field.field.node.solicitud.field_news
+    - field.field.node.solicitud.field_request_client
+    - field.field.node.solicitud.field_request_equipment
+    - field.field.node.solicitud.field_request_state
+    - field.field.node.solicitud.field_requested_service
+    - node.type.solicitud
+  module:
+    - user
+id: node.solicitud.content_browser
+targetEntityType: node
+bundle: solicitud
+mode: content_browser
+content:
+  field_request_client:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_request_equipment:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_requested_service:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_contact_channel: true
+  field_news: true
+  field_request_state: true
+  langcode: true

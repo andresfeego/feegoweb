@@ -1,0 +1,56 @@
+uuid: 580481c8-274c-4996-99ef-fbdf919a8ba5
+langcode: es
+status: true
+dependencies:
+  config:
+    - contact.form.contactenos_footer
+    - field.field.contact_message.contactenos_footer.field_phone_contact
+id: contact_message.contactenos_footer.default
+targetEntityType: contact_message
+bundle: contactenos_footer
+mode: default
+content:
+  field_phone_contact:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 5
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  mail:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  message:
+    type: string_textarea
+    weight: 4
+    region: content
+    settings:
+      rows: 12
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  subject:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  copy: true
+  preview: true

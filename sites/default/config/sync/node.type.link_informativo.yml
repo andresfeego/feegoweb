@@ -1,0 +1,17 @@
+uuid: 949318b9-725c-4a3c-8e90-67e8cd9eb02b
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Link informativo'
+type: link_informativo
+description: 'Links a información o videos de procesos concidos.'
+help: null
+new_revision: true
+preview_mode: 0
+display_submitted: true

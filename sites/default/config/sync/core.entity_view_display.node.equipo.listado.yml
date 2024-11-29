@@ -1,0 +1,79 @@
+uuid: f7eb09c8-e542-43e8-9f33-534dc5d11161
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.listado
+    - field.field.node.equipo.field_equipment_client
+    - field.field.node.equipo.field_equipment_image
+    - field.field.node.equipo.field_equipment_model
+    - field.field.node.equipo.field_equipment_obs
+    - field.field.node.equipo.field_equipment_obs_tec
+    - field.field.node.equipo.field_equipment_specs
+    - field.field.node.equipo.field_productmanufactureid
+    - field.field.node.equipo.field_serial_number
+    - node.type.equipo
+  module:
+    - entity_reference_revisions
+    - user
+id: node.equipo.listado
+targetEntityType: node
+bundle: equipo
+mode: listado
+content:
+  field_equipment_client:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_equipment_model:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_equipment_obs:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_equipment_obs_tec:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_equipment_specs:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_serial_number:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_equipment_image: true
+  field_productmanufactureid: true
+  langcode: true

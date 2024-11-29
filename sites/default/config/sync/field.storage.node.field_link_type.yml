@@ -1,0 +1,27 @@
+uuid: e23938e8-88e0-4efe-8127-c9ba5b5aed5b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_link_type
+field_name: field_link_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: public
+      label: 'Hack público'
+    -
+      value: technical
+      label: 'Hack técnico'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

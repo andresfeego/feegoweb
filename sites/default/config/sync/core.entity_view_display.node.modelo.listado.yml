@@ -1,0 +1,97 @@
+uuid: 83cf3394-cf6c-47b9-81b2-f0212d24259e
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.listado
+    - field.field.node.modelo.field_brand
+    - field.field.node.modelo.field_imagen_equipo
+    - field.field.node.modelo.field_manual
+    - field.field.node.modelo.field_model_image
+    - field.field.node.modelo.field_model_link
+    - field.field.node.modelo.field_model_links
+    - field.field.node.modelo.field_model_specs
+    - field.field.node.modelo.field_model_type
+    - field.field.node.modelo.field_observations_model
+    - field.field.node.modelo.field_specs_pc
+    - node.type.modelo
+  module:
+    - entity_reference_revisions
+    - file
+    - image
+    - text
+    - user
+id: node.modelo.listado
+targetEntityType: node
+bundle: modelo
+mode: listado
+content:
+  field_brand:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_manual:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_model_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_model_link:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_model_specs:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_observations_model:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_specs_pc:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_imagen_equipo: true
+  field_model_links: true
+  field_model_type: true
+  langcode: true

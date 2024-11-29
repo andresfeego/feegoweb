@@ -1,0 +1,22 @@
+uuid: 5602ab7f-cf2c-4331-b199-d6a39abe2efe
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.contact_data
+id: node.contact_data.promote
+field_name: promote
+entity_type: node
+bundle: contact_data
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

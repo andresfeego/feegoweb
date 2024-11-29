@@ -1,0 +1,80 @@
+uuid: fdfd4ab9-8ee3-4338-8dc4-914fa5829ed0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.especificaciones.field_gpu
+    - field.field.paragraph.especificaciones.field_max_ram
+    - field.field.paragraph.especificaciones.field_screen
+    - field.field.paragraph.especificaciones.field_specs_processor
+    - field.field.paragraph.especificaciones.field_specs_ram_memory
+    - field.field.paragraph.especificaciones.field_storage
+    - paragraphs.paragraphs_type.especificaciones
+id: paragraph.especificaciones.default
+targetEntityType: paragraph
+bundle: especificaciones
+mode: default
+content:
+  field_gpu:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_max_ram:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_screen:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_specs_processor:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_specs_ram_memory:
+    type: entity_reference_autocomplete
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_storage:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

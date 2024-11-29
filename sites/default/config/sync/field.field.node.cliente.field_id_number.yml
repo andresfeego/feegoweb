@@ -1,0 +1,25 @@
+uuid: e5cef618-9207-485e-a47e-4571d140004a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_id_number
+    - node.type.cliente
+id: node.cliente.field_id_number
+field_name: field_id_number
+entity_type: node
+bundle: cliente
+label: 'Número de documento'
+description: 'Número de identificación'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

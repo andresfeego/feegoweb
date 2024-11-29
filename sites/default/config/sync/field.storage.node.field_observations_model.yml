@@ -1,0 +1,21 @@
+uuid: d28d2d90-01b6-4229-a2c4-95bc79f81160
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_observations_model
+field_name: field_observations_model
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

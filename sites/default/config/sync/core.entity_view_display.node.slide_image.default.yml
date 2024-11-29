@@ -1,0 +1,26 @@
+uuid: 00539839-c17b-49e3-a63d-34ec7f2abad0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.slide_image.field_slide_banner_image
+    - node.type.slide_image
+  module:
+    - user
+id: node.slide_image.default
+targetEntityType: node
+bundle: slide_image
+mode: default
+content:
+  field_slide_banner_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  links: true

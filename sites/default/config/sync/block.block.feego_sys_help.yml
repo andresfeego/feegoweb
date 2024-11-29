@@ -1,0 +1,22 @@
+uuid: 65cb9ba6-76e7-4c04-8dd9-7143b0c58d40
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - feego_sys
+_core:
+  default_config_hash: B9bsNlse-vxyIBl5JkcMLB-z9Zig9FW2Kfy75CiXB5U
+id: feego_sys_help
+theme: feego_sys
+region: highlighted
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

@@ -1,0 +1,19 @@
+uuid: 47e83ddb-a2f8-4f7e-a267-7ac92c1c81a3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subtitulo
+    - paragraphs.paragraphs_type.blck_informativo_pagina_2
+id: paragraph.blck_informativo_pagina_2.field_subtitulo
+field_name: field_subtitulo
+entity_type: paragraph
+bundle: blck_informativo_pagina_2
+label: Subtítulo
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

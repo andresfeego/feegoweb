@@ -1,0 +1,43 @@
+uuid: 25ab2c07-c0cf-443a-a1e8-129ecb2415a2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_equipment_image
+    - node.type.equipo
+    - paragraphs.paragraphs_type.equipment_image
+  module:
+    - entity_reference_revisions
+id: node.equipo.field_equipment_image
+field_name: field_equipment_image
+entity_type: node
+bundle: equipo
+label: 'Imagen equipo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      equipment_image: equipment_image
+    negate: 0
+    target_bundles_drag_drop:
+      blck_page_information_1:
+        weight: 6
+        enabled: false
+      equipment_image:
+        weight: 3
+        enabled: true
+      especificaciones:
+        weight: 4
+        enabled: false
+      page_service:
+        weight: 9
+        enabled: false
+      titulo_separador:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

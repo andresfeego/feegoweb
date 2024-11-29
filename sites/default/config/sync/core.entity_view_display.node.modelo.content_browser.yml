@@ -1,0 +1,41 @@
+uuid: d6a4ba85-8e97-451a-9f8a-2c57381ec2bf
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.content_browser
+    - field.field.node.modelo.field_brand
+    - field.field.node.modelo.field_imagen_equipo
+    - field.field.node.modelo.field_manual
+    - field.field.node.modelo.field_model_image
+    - field.field.node.modelo.field_model_link
+    - field.field.node.modelo.field_model_links
+    - field.field.node.modelo.field_model_specs
+    - field.field.node.modelo.field_model_type
+    - field.field.node.modelo.field_observations_model
+    - field.field.node.modelo.field_specs_pc
+    - node.type.modelo
+  module:
+    - user
+id: node.modelo.content_browser
+targetEntityType: node
+bundle: modelo
+mode: content_browser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_brand: true
+  field_imagen_equipo: true
+  field_manual: true
+  field_model_image: true
+  field_model_link: true
+  field_model_links: true
+  field_model_specs: true
+  field_model_type: true
+  field_observations_model: true
+  field_specs_pc: true
+  langcode: true

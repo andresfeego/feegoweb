@@ -1,0 +1,30 @@
+uuid: f9942a65-bf90-4313-8790-f1c8e340f99a
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_contact_channel
+field_name: field_contact_channel
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: WP
+      label: 'Publicidad Instagram'
+    -
+      value: FB
+      label: 'Publicidad Facebook'
+    -
+      value: PR
+      label: Personal
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

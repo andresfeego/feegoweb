@@ -1,0 +1,19 @@
+uuid: ddb520cb-e0e5-4bf4-969a-17c08a9f2bf5
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_field_link_description
+field_name: field_field_link_description
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

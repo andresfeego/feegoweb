@@ -1,0 +1,14 @@
+uuid: 47761054-2839-4357-b00c-88d62d6fd9ce
+langcode: es
+status: true
+dependencies: {  }
+id: berlin
+label: Berlin
+font_family: Berlin
+font_classification:
+  serif: '0'
+  sans-serif: '0'
+  slab-serif: '0'
+  handwriting: '0'
+  decorative: '0'
+  monospace: '0'

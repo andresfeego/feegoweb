@@ -1,0 +1,40 @@
+uuid: 2648e0f6-7069-4228-8fd1-198eb2e75acb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.sales.field_item_sales
+    - field.field.node.sales.field_news
+    - node.type.sales
+  module:
+    - entity_reference_revisions
+    - user
+id: node.sales.default
+targetEntityType: node
+bundle: sales
+mode: default
+content:
+  field_item_sales:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_news:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

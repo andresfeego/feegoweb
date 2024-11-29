@@ -1,0 +1,17 @@
+uuid: 47983ae4-51ff-48d9-97b0-18ed0a99399b
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Producto
+type: product
+description: 'Productos para la venta'
+help: null
+new_revision: true
+preview_mode: 0
+display_submitted: true

@@ -1,0 +1,17 @@
+uuid: 4877d064-4c17-4d3b-8c91-06e7d26586e6
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Slide Imagenes'
+type: slide_image
+description: null
+help: null
+new_revision: true
+preview_mode: 0
+display_submitted: false

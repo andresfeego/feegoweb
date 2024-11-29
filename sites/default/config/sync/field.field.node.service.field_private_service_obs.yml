@@ -1,0 +1,19 @@
+uuid: 6b611376-15a0-4e20-8851-580c70b91f3f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_private_service_obs
+    - node.type.service
+id: node.service.field_private_service_obs
+field_name: field_private_service_obs
+entity_type: node
+bundle: service
+label: 'Observaciones privadas'
+description: 'Observaciones vistas solo por personal Feego'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

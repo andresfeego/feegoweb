@@ -1,0 +1,31 @@
+uuid: afe2f1ee-c0e6-4472-9bc5-b93644e0149d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.titulo_separador.field_separator_icons
+    - field.field.paragraph.titulo_separador.field_title
+    - paragraphs.paragraphs_type.titulo_separador
+id: paragraph.titulo_separador.default
+targetEntityType: paragraph
+bundle: titulo_separador
+mode: default
+content:
+  field_separator_icons:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

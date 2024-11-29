@@ -1,0 +1,56 @@
+uuid: 0a45eab7-4ec6-4dd8-8f92-04465abfdaed
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.equipment_image.field_image
+    - field.field.paragraph.equipment_image.field_news
+    - field.field.paragraph.equipment_image.field_time_stamp
+    - image.style.large
+    - paragraphs.paragraphs_type.equipment_image
+  module:
+    - image
+id: paragraph.equipment_image.default
+targetEntityType: paragraph
+bundle: equipment_image
+mode: default
+content:
+  field_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_news:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_time_stamp:
+    type: timestamp
+    label: above
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+      tooltip:
+        date_format: long
+        custom_date_format: ''
+      time_diff:
+        enabled: false
+        future_format: '@interval hence'
+        past_format: '@interval ago'
+        granularity: 2
+        refresh: 60
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

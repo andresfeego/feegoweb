@@ -1,0 +1,11 @@
+uuid: 433bc81b-294a-4e63-8559-463898728f01
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.solicitud
+id: node.solicitud
+target_entity_type_id: node
+target_bundle: solicitud
+default_langcode: site_default
+language_alterable: false

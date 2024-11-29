@@ -1,0 +1,30 @@
+uuid: 411941ed-8957-4f3d-b87c-71a49fe6e85f
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.banner_image_header
+  module:
+    - system
+    - views
+  theme:
+    - feego_sys
+id: feego_sys_views_block__banner_image_header_block_1
+theme: feego_sys
+region: header
+weight: 0
+provider: null
+plugin: 'views_block:banner_image_header-block_1'
+settings:
+  id: 'views_block:banner_image_header-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

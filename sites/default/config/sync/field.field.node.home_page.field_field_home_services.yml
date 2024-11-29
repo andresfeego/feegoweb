@@ -1,0 +1,37 @@
+uuid: 53a4fd1e-3ed9-457d-a19e-2712237bc602
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_field_home_services
+    - node.type.home_page
+    - paragraphs.paragraphs_type.page_service
+  module:
+    - entity_reference_revisions
+id: node.home_page.field_field_home_services
+field_name: field_field_home_services
+entity_type: node
+bundle: home_page
+label: Servicios
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      page_service: page_service
+    negate: 0
+    target_bundles_drag_drop:
+      equipment_image:
+        weight: 4
+        enabled: false
+      especificaciones:
+        weight: 5
+        enabled: false
+      page_service:
+        weight: 6
+        enabled: true
+field_type: entity_reference_revisions

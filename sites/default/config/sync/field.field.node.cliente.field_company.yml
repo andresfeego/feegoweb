@@ -1,0 +1,29 @@
+uuid: 24b23112-cd33-45f2-b465-7e8845a0edd9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_company
+    - node.type.cliente
+    - node.type.empresa
+id: node.cliente.field_company
+field_name: field_company
+entity_type: node
+bundle: cliente
+label: Empresa
+description: 'Solo para clientes o usuarios de empresa.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      empresa: empresa
+    sort:
+      field: title
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

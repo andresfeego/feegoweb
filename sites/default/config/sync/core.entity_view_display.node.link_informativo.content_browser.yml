@@ -1,0 +1,29 @@
+uuid: 2f20bbff-4328-40fc-88ad-93086128acd3
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.content_browser
+    - field.field.node.link_informativo.field_field_link_description
+    - field.field.node.link_informativo.field_link_type
+    - field.field.node.link_informativo.field_link_video
+    - field.field.node.link_informativo.field_tutorial_link
+    - node.type.link_informativo
+  module:
+    - user
+id: node.link_informativo.content_browser
+targetEntityType: node
+bundle: link_informativo
+mode: content_browser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_field_link_description: true
+  field_link_type: true
+  field_link_video: true
+  field_tutorial_link: true
+  langcode: true

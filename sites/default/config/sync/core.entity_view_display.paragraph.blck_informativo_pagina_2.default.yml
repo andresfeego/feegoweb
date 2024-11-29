@@ -1,0 +1,38 @@
+uuid: b8bc4c8f-2b95-42e9-8077-c5cca82dd716
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.blck_informativo_pagina_2.field_large_text
+    - field.field.paragraph.blck_informativo_pagina_2.field_subtitulo
+    - field.field.paragraph.blck_informativo_pagina_2.field_title_a
+    - paragraphs.paragraphs_type.blck_informativo_pagina_2
+id: paragraph.blck_informativo_pagina_2.default
+targetEntityType: paragraph
+bundle: blck_informativo_pagina_2
+mode: default
+content:
+  field_large_text:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_subtitulo:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title_a:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,46 @@
+uuid: a70e084f-ab53-4434-adc3-39518aea6c95
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.page_service.field_page_service_image
+    - field.field.paragraph.page_service.field_page_service_link
+    - field.field.paragraph.page_service.field_page_service_title
+    - paragraphs.paragraphs_type.page_service
+  module:
+    - link
+id: paragraph.page_service.default
+targetEntityType: paragraph
+bundle: page_service
+mode: default
+content:
+  field_page_service_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_page_service_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_page_service_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

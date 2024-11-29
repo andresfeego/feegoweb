@@ -1,0 +1,19 @@
+uuid: f8f2d06e-16c5-44dc-9b47-0e53f91428c1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_product_description
+    - node.type.product
+id: node.product.field_product_description
+field_name: field_product_description
+entity_type: node
+bundle: product
+label: Descripción
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,11 @@
+uuid: d9f3187f-0421-4e7d-a082-fb78a9bb888d
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.autoplay
+label: AutoPlay
+description: ''
+targetEntityType: media
+cache: true

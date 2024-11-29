@@ -1,0 +1,29 @@
+uuid: 6df0cb8f-bdcd-4f8f-9c13-78eb53000ede
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_asigned_to
+    - node.type.service
+id: node.service.field_asigned_to
+field_name: field_asigned_to
+entity_type: node
+bundle: service
+label: 'Asignado a'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    filter:
+      type: _none
+    include_anonymous: false
+field_type: entity_reference

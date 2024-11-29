@@ -1,0 +1,43 @@
+uuid: d8f3944d-a778-4324-95bd-377590f1c413
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.page_service.field_page_service_image
+    - field.field.paragraph.page_service.field_page_service_link
+    - field.field.paragraph.page_service.field_page_service_title
+    - paragraphs.paragraphs_type.page_service
+  module:
+    - link
+    - media_library
+id: paragraph.page_service.default
+targetEntityType: paragraph
+bundle: page_service
+mode: default
+content:
+  field_page_service_image:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_page_service_link:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_page_service_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

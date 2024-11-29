@@ -1,0 +1,11 @@
+uuid: 94947ef9-02c4-4e37-8bc5-418e2cb407f9
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: XWhEB0wh2uZrN5btKVxQzH46OCEyEzgpGkFzL6AbLK4
+name: 'Font Foundry'
+vid: font_foundry
+description: 'Font Foundry'
+weight: 0
+new_revision: false

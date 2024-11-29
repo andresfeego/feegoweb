@@ -1,0 +1,19 @@
+uuid: 5df3b5f3-d4e7-40b0-922c-a847bf5f7303
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_texto
+    - paragraphs.paragraphs_type.blck_page_information_1
+id: paragraph.blck_page_information_1.field_texto
+field_name: field_texto
+entity_type: paragraph
+bundle: blck_page_information_1
+label: Texto
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

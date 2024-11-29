@@ -1,0 +1,11 @@
+uuid: a447aa89-9058-4708-918c-44b092415bac
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.link_informativo
+id: node.link_informativo
+target_entity_type_id: node
+target_bundle: link_informativo
+default_langcode: site_default
+language_alterable: false

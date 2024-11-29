@@ -1,0 +1,19 @@
+uuid: 395a287b-eb13-4fdc-a7f8-e4ef01644309
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_service
+field_name: field_service
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

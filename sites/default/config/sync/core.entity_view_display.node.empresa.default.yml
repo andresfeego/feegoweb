@@ -1,0 +1,20 @@
+uuid: d2e5feaa-0401-48f3-9886-77cc95e0b2a6
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.empresa
+  module:
+    - user
+id: node.empresa.default
+targetEntityType: node
+bundle: empresa
+mode: default
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

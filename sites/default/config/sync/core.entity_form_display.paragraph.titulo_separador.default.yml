@@ -1,0 +1,33 @@
+uuid: de96cb97-0951-4fc6-b1cc-690d678516ec
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.titulo_separador.field_separator_icons
+    - field.field.paragraph.titulo_separador.field_title
+    - paragraphs.paragraphs_type.titulo_separador
+  module:
+    - media_library
+id: paragraph.titulo_separador.default
+targetEntityType: paragraph
+bundle: titulo_separador
+mode: default
+content:
+  field_separator_icons:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

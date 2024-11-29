@@ -1,0 +1,10 @@
+uuid: bbb58723-f82f-4d8e-a66d-e69633494085
+langcode: es
+status: true
+dependencies: {  }
+id: especificaciones
+label: Especificaciones
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

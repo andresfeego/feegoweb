@@ -1,0 +1,11 @@
+uuid: b83d4fa1-da1f-4cf4-add8-65cd718912c9
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.procesador
+id: taxonomy_term.procesador
+target_entity_type_id: taxonomy_term
+target_bundle: procesador
+default_langcode: site_default
+language_alterable: false

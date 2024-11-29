@@ -1,0 +1,22 @@
+uuid: 6ef9f05d-7c64-4982-ad72-39c64c3a7de3
+langcode: en
+status: true
+dependencies:
+  theme:
+    - feego_sys
+_core:
+  default_config_hash: vYZnRrxdY0I62luHkXfCyE-YTn42SWlexb8sAgsAhyU
+id: feego_sys_secondary_local_tasks
+theme: feego_sys
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

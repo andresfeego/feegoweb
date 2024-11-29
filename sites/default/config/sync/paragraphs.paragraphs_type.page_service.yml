@@ -1,0 +1,10 @@
+uuid: 141aeda9-1c36-461d-a575-4a7103e219ac
+langcode: es
+status: true
+dependencies: {  }
+id: page_service
+label: Pagina-Servicios
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

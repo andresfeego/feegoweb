@@ -1,0 +1,29 @@
+uuid: 18d37779-7d71-46bd-8c40-a163ada3e08f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_request
+    - node.type.service
+    - node.type.solicitud
+id: node.service.field_request
+field_name: field_request
+entity_type: node
+bundle: service
+label: Solicitud
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      solicitud: solicitud
+    sort:
+      field: vid
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

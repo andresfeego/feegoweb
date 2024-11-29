@@ -1,0 +1,11 @@
+uuid: 159bfd31-b5e8-4a60-bcc7-dde5abe50ed1
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.cliente
+id: node.cliente
+target_entity_type_id: node
+target_bundle: cliente
+default_langcode: site_default
+language_alterable: false

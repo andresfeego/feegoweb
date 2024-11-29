@@ -1,0 +1,18 @@
+uuid: 2a6082ca-3cd4-4d31-8387-9d4b99330cfc
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.service
+id: node.service.title
+field_name: title
+entity_type: node
+bundle: service
+label: 'Resumen servicio'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

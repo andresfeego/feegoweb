@@ -1,0 +1,31 @@
+uuid: e45d53c5-c71a-4dc9-8782-6a64f8476dde
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ssd_video
+    - media.type.remote_video
+    - media.type.video
+    - node.type.home_page
+id: node.home_page.field_ssd_video
+field_name: field_ssd_video
+entity_type: node
+bundle: home_page
+label: 'Video ssd'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      remote_video: remote_video
+      video: video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: remote_video
+field_type: entity_reference

@@ -1,0 +1,31 @@
+uuid: adf5912e-39cb-4a6e-88c4-435edad1c18b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_item_bill
+    - node.type.product
+    - node.type.service
+    - paragraphs.paragraphs_type.item_bill
+id: paragraph.item_bill.field_item_bill
+field_name: field_item_bill
+entity_type: paragraph
+bundle: item_bill
+label: 'Item factura'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      product: product
+      service: service
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: product
+field_type: entity_reference

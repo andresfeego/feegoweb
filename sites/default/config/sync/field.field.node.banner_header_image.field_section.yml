@@ -1,0 +1,21 @@
+uuid: 1e9a188c-e2e1-448a-974c-2cd584c37a73
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_section
+    - node.type.banner_header_image
+  module:
+    - options
+id: node.banner_header_image.field_section
+field_name: field_section
+entity_type: node
+bundle: banner_header_image
+label: Sección
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

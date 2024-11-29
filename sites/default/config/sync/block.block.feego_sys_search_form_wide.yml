@@ -1,0 +1,23 @@
+uuid: 9b51aed4-4fec-4084-836a-b67aeb9861ea
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - feego_sys
+_core:
+  default_config_hash: AQfg0GWA6q63rUANQEeUoo1_1ppJ-_H43yxOMpd_IKE
+id: feego_sys_search_form_wide
+theme: feego_sys
+region: top_header_form
+weight: -7
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

@@ -1,0 +1,39 @@
+uuid: 2768cc7a-f22a-43be-b906-e53ddaa85b94
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.banner_header_image.field_icon_logo
+    - field.field.node.banner_header_image.field_image
+    - field.field.node.banner_header_image.field_section
+    - image.style.medium
+    - node.type.banner_header_image
+  module:
+    - image
+    - user
+id: node.banner_header_image.teaser
+targetEntityType: node
+bundle: banner_header_image
+mode: teaser
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_icon_logo: true
+  field_section: true
+  langcode: true

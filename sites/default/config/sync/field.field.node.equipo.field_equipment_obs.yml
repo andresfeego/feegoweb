@@ -1,0 +1,19 @@
+uuid: 54b3381a-f64e-4cc7-86b1-533802b2f104
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_equipment_obs
+    - node.type.equipo
+id: node.equipo.field_equipment_obs
+field_name: field_equipment_obs
+entity_type: node
+bundle: equipo
+label: Observaciones
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

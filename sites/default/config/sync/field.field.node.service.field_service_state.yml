@@ -1,0 +1,23 @@
+uuid: 4178f427-4847-4354-8839-20e99eb8ecc6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_service_state
+    - node.type.service
+  module:
+    - options
+id: node.service.field_service_state
+field_name: field_service_state
+entity_type: node
+bundle: service
+label: Estado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: AB
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,23 @@
+uuid: a8d8dc85-e369-44d6-bc0a-5b31a73b9f2e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_product_minimal_cost
+    - node.type.product
+id: node.product.field_product_minimal_cost
+field_name: field_product_minimal_cost
+entity_type: node
+bundle: product
+label: 'Valor minimo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: $
+  suffix: ''
+field_type: integer

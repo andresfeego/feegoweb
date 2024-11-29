@@ -1,0 +1,19 @@
+uuid: 4d7aa313-d95c-43ca-8392-f0b50d2c1ab6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_activity
+    - node.type.cliente
+id: node.cliente.field_activity
+field_name: field_activity
+entity_type: node
+bundle: cliente
+label: Actividad
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

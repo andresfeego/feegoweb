@@ -1,0 +1,10 @@
+uuid: 20f6fffd-6ae8-49aa-97d6-a9379d7aeb57
+langcode: es
+status: true
+dependencies: {  }
+id: blck_informativo_pagina_2
+label: 'Blck Informativo página 2'
+icon_uuid: null
+icon_default: null
+description: 'Título - subtítulo - texto amplio'
+behavior_plugins: {  }

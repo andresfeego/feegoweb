@@ -1,0 +1,11 @@
+uuid: 00f3e22e-a743-4eb5-987d-6b2ec445b873
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.memoria_ram
+id: taxonomy_term.memoria_ram
+target_entity_type_id: taxonomy_term
+target_bundle: memoria_ram
+default_langcode: site_default
+language_alterable: false

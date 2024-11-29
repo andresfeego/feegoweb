@@ -1,0 +1,21 @@
+uuid: febd9563-060d-4711-9e90-de4bdde547ec
+langcode: es
+status: true
+dependencies:
+  module:
+    - contact
+id: contact_message.field_phone_contact
+field_name: field_phone_contact
+entity_type: contact_message
+type: string
+settings:
+  max_length: 15
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

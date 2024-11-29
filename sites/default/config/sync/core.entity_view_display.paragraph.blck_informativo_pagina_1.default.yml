@@ -1,0 +1,31 @@
+uuid: e7b33c4c-f56f-4f81-b56c-c25d65e100c7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.blck_informativo_pagina_1.field_image_block3
+    - field.field.paragraph.blck_informativo_pagina_1.field_title_block3
+    - paragraphs.paragraphs_type.blck_informativo_pagina_1
+id: paragraph.blck_informativo_pagina_1.default
+targetEntityType: paragraph
+bundle: blck_informativo_pagina_1
+mode: default
+content:
+  field_image_block3:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_title_block3:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

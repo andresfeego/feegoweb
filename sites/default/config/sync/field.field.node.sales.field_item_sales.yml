@@ -1,0 +1,52 @@
+uuid: 2da7f313-f26d-44e2-9db9-a01d4562f1f4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_item_sales
+    - node.type.sales
+    - paragraphs.paragraphs_type.item_bill
+  module:
+    - entity_reference_revisions
+id: node.sales.field_item_sales
+field_name: field_item_sales
+entity_type: node
+bundle: sales
+label: Item
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      item_bill: item_bill
+    negate: 0
+    target_bundles_drag_drop:
+      blck_informativo_pagina_1:
+        weight: 9
+        enabled: false
+      blck_informativo_pagina_2:
+        weight: 10
+        enabled: false
+      blck_page_information_1:
+        weight: 11
+        enabled: false
+      equipment_image:
+        weight: 12
+        enabled: false
+      especificaciones:
+        weight: 13
+        enabled: false
+      item_bill:
+        weight: 14
+        enabled: true
+      page_service:
+        weight: 15
+        enabled: false
+      titulo_separador:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

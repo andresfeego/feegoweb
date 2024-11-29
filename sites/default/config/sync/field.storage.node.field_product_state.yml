@@ -1,0 +1,30 @@
+uuid: 633d570f-7026-4e2e-86e8-7754da33a3d8
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_product_state
+field_name: field_product_state
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: ST
+      label: 'En Stock'
+    -
+      value: AG
+      label: Agotado
+    -
+      value: VD
+      label: Vendido
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

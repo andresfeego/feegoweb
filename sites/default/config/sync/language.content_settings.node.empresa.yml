@@ -1,0 +1,11 @@
+uuid: 76e57861-cdc3-4adb-8f5d-a119fb524268
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.empresa
+id: node.empresa
+target_entity_type_id: node
+target_bundle: empresa
+default_langcode: site_default
+language_alterable: false

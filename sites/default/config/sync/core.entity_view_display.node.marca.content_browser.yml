@@ -1,0 +1,25 @@
+uuid: c86f5dda-5f45-4df9-a42b-b78023290167
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.content_browser
+    - field.field.node.marca.field_extended_logo
+    - field.field.node.marca.field_logo
+    - node.type.marca
+  module:
+    - user
+id: node.marca.content_browser
+targetEntityType: node
+bundle: marca
+mode: content_browser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_extended_logo: true
+  field_logo: true
+  langcode: true
