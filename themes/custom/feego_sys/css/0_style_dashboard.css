@@ -40,7 +40,7 @@ body:has(:not(.path-frontpage)) .header{
 }
 
 
-body:has(:not(.path-frontpage)) .block-views-blockbanner-image-header-block-11 {
+body:has(:not(.path-frontpage)) .block-views-blockbanner-image-header-block-1 {
     position: absolute;
     top: 0;
     left: 0;
@@ -50,11 +50,11 @@ body:has(:not(.path-frontpage)) .block-views-blockbanner-image-header-block-11 {
     justify-content: center;
 }
 
-body:has(:not(.path-frontpage)) .block-views-blockbanner-image-header-block-11 .contextual{
+body:has(:not(.path-frontpage)) .block-views-blockbanner-image-header-block-1 .contextual{
     display: none;
 }
 
-body:has(:not(.path-frontpage)) .block-views-blockbanner-image-header-block-11  .content *{
+body:has(:not(.path-frontpage)) .block-views-blockbanner-image-header-block-1  .content *{
     width: 100%;
     margin: 0;
     padding: 0;
@@ -63,7 +63,7 @@ body:has(:not(.path-frontpage)) .block-views-blockbanner-image-header-block-11  
     filter: opacity(0.95);
 }
 
-body:has(:not(.path-frontpage)) .block-views-blockbanner-image-header-block-11  .content{
+body:has(:not(.path-frontpage)) .block-views-blockbanner-image-header-block-1  .content{
     height: 160px;
     overflow: hidden;
     z-index: 0;
@@ -72,7 +72,7 @@ body:has(:not(.path-frontpage)) .block-views-blockbanner-image-header-block-11  
     position: relative;
 }
 
-body:has(:not(.path-frontpage)) .block-views-blockbanner-image-header-block-11 .content::before{
+body:has(:not(.path-frontpage)) .block-views-blockbanner-image-header-block-1 .content::before{
     content: '';
     position: absolute;
     bottom: 0;
