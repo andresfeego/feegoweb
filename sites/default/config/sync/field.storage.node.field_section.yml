@@ -18,8 +18,11 @@ settings:
       value: technical
       label: Técnico
     -
-      value: ''
+      value: homme
       label: Homme
+    -
+      value: solicitudes
+      label: solicitudes
   allowed_values_function: ''
 module: options
 locked: false

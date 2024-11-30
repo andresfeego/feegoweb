@@ -13,7 +13,7 @@ settings:
   allowed_values:
     -
       value: AB
-      label: Abierto
+      label: Pendiente
     -
       value: CR
       label: Cerrado

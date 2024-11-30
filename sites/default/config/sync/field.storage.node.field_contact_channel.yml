@@ -18,8 +18,14 @@ settings:
       value: FB
       label: 'Publicidad Facebook'
     -
+      value: PB
+      label: 'Publicidad banners'
+    -
       value: PR
       label: Personal
+    -
+      value: RE
+      label: Referido
   allowed_values_function: ''
 module: options
 locked: false

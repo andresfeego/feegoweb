@@ -1,7 +1,7 @@
 global-styling:
   version: VERSION
   js:
-    js/global.js: {}
+    js/0_feego_sys.js: {}
   css:
     component:
       css/0_style_home.css: {}

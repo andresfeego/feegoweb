@@ -25,38 +25,38 @@ body * {
     position: relative;
 }
 
-.path-frontpage #block-feego-sys-main-menu>ul {
+#block-feego-sys-main-menu>ul {
     display: flex;
     justify-content: center;
 }
 
-.path-frontpage #block-feego-sys-main-menu>ul>li {
+#block-feego-sys-main-menu>ul>li {
     margin: 0 100px;
 }
 
-.path-frontpage #block-feego-sys-main-menu>ul>li>a {
+#block-feego-sys-main-menu>ul>li>a {
     color: #fff;
     filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 1.7));
     text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
 }
 
-.path-frontpage #block-feego-sys-main-menu>ul>li .dropdown-menu {
+#block-feego-sys-main-menu>ul>li .dropdown-menu {
     background-color: transparent;
     backdrop-filter: blur(9px);
 }
 
-.path-frontpage #block-feego-sys-main-menu>ul>li:hover {
+#block-feego-sys-main-menu>ul>li:hover {
     position: relative;
 }
 
-.path-frontpage #block-feego-sys-main-menu>ul>li .dropdown-menu>li:hover {
+#block-feego-sys-main-menu>ul>li .dropdown-menu>li:hover {
     background-color: transparent;
     backdrop-filter: blur(1px);
     position: relative;
 }
 
-.path-frontpage #block-feego-sys-main-menu>ul>li:hover::after,
-.path-frontpage #block-feego-sys-main-menu>ul>li .dropdown-menu>li:hover::after {
+#block-feego-sys-main-menu>ul>li:hover::after,
+#block-feego-sys-main-menu>ul>li .dropdown-menu>li:hover::after {
     content: '';
     position: absolute;
     left: 0;
@@ -67,12 +67,12 @@ body * {
     background: linear-gradient(to right, rgba(255, 0, 0, 0) 0%, #00ead0 10px, #00ead0 calc(100% - 10px), rgba(255, 0, 0, 0) 100%);
 }
 
-.path-frontpage #block-feego-sys-main-menu>ul>li .dropdown-menu>li>a {
+#block-feego-sys-main-menu>ul>li .dropdown-menu>li>a {
     color: #fff;
     text-decoration: none;
 }
 
-.path-frontpage #block-feego-sys-main-menu {
+#block-feego-sys-main-menu {
     width: 80%;
     margin: auto;
 }
@@ -133,11 +133,22 @@ body * {
     padding: 0;
 }
 
+.gin--navigation main .node__content {
+    margin-top: -112px !important;
+}
+
+.gin--navigation nav.tabs{
+    z-index: 10;
+    position: relative;
+    top: -56px;
+}
+
 .path-frontpage #main-wrapper .container-fluid .node--type-home-page>.node__content {
     margin-top: -56px;
     position: relative;
     display: flex;
     flex-direction: column;
+    z-index: 0;
 }
 
 .path-frontpage .field--name-field-field-home-services {
