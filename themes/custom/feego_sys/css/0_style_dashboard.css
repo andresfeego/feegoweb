@@ -86,6 +86,8 @@ body:has(:not(.path-frontpage)) .block-views-blockbanner-image-header-block-1 .c
 body:has(:not(.path-frontpage), .path-solicitudes) .block-page-title-block{
     margin-bottom: 64px;
     color: #fff;
+    z-index: 10000;
+    position: relative;
 }
 
 .path-solicitudes #block-feego-sys-main-menu{
