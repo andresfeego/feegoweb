@@ -230,12 +230,12 @@ body:has(:not(.path-frontpage), .path-solicitudes) .block-page-title-block{
 }
 
 .path-solicitudes .views-row .views-field-field-request-state .state-request-crear-servicio{
-    background-color: #ffc739;
+    background-color: #ff9f1c;
     color: #fff;
 }
 
 .path-solicitudes .views-row .views-field-field-request-state .state-request-servicio-creado{
-    background-color: #ff9f1c;
+    background-color: #7ae582;
     color: #fff;
 }
 
