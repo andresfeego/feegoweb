@@ -290,6 +290,7 @@ body:has(:not(.path-frontpage), .path-solicitudes) .block-page-title-block{
     margin-right: 16px;
 }
 
+
 @media screen and (width <= 520px) {
     body:has(:not(.path-frontpage), .layout-no-sidebars) main{
         padding: 16px 16px 92px;
