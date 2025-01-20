@@ -3,10 +3,9 @@ langcode: es
 status: true
 dependencies:
   config:
-    - field.storage.node.field_image
+    - field.storage.node.field_image_banner
     - node.type.banner_header_image
   module:
-    - image
     - node
     - options
     - user
@@ -26,10 +25,10 @@ display:
     display_options:
       title: 'Banner imagen encabezado'
       fields:
-        field_image:
-          id: field_image
-          table: node__field_image
-          field: field_image
+        field_image_banner:
+          id: field_image_banner
+          table: node__field_image_banner
+          field: field_image_banner
           relationship: none
           group_type: group
           admin_label: ''
@@ -76,13 +75,10 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: entity_reference_entity_view
           settings:
-            image_link: ''
-            image_style: ''
-            image_loading:
-              attribute: lazy
-          group_column: ''
+            view_mode: full
+          group_column: target_id
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -219,7 +215,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_image'
+        - 'config:field.storage.node.field_image_banner'
   block_1:
     id: block_1
     display_title: Block
@@ -236,4 +232,4 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_image'
+        - 'config:field.storage.node.field_image_banner'

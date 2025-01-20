@@ -10,8 +10,8 @@ _core:
   default_config_hash: akUdnBBLL0iXFKLPMdJ6Mafq_inTB9tOE143DTlByF4
 id: feego_sys_page_title
 theme: feego_sys
-region: content
-weight: -7
+region: header
+weight: -9
 provider: null
 plugin: page_title_block
 settings:

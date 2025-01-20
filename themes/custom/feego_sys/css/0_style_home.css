@@ -102,7 +102,7 @@ body * {
     align-items: center;
 }
 
-.path-frontpage .node--type-banner-header-image>.node__content .field--name-field-image {
+.path-frontpage .node--type-banner-header-image>.node__content .field--name-field-image-banner {
     margin: 0;
     width: 100svw;
     height: 700px;
@@ -111,9 +111,13 @@ body * {
     align-content: center;
 }
 
-.path-frontpage .node--type-banner-header-image>.node__content .field--name-field-icon-logo {
+.path-frontpage .node--type-banner-header-image>.node__content .field--name-field-icon-banner .field__label {
+    display: none;
+}
+
+.path-frontpage .node--type-banner-header-image>.node__content .field--name-field-icon-banner {
     position: absolute;
-    top: 16px;
+    top: 120px;
     width: 119px;
     position: absolute;
     left: 0;
