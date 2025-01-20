@@ -25,16 +25,13 @@ settings:
       label: 'Por repuestos'
     -
       value: RE
-      label: Resuelta
+      label: Resuelto
     -
-      value: PC
-      label: 'Por cobrar'
+      value: ENT
+      label: Entregado
     -
-      value: CR
-      label: Cerrada
-    -
-      value: RCH
-      label: Rechazada
+      value: NE
+      label: 'No exitoso'
   allowed_values_function: ''
 module: options
 locked: false

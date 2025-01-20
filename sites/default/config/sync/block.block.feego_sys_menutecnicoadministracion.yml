@@ -12,7 +12,7 @@ dependencies:
 id: feego_sys_menutecnicoadministracion
 theme: feego_sys
 region: secondary_menu
-weight: 0
+weight: -9
 provider: null
 plugin: 'superfish:admin-side-right-menu'
 settings:

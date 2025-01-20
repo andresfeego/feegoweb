@@ -1,0 +1,20 @@
+uuid: a99c62d5-0b73-4853-8a2e-af88158a7f17
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_icon_banner
+field_name: field_icon_banner
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

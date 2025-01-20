@@ -1,0 +1,29 @@
+uuid: bba37373-c27d-4630-aeb7-06eb90af1f12
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_icon_banner
+    - media.type.image
+    - node.type.banner_header_image
+id: node.banner_header_image.field_icon_banner
+field_name: field_icon_banner
+entity_type: node
+bundle: banner_header_image
+label: Icono
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

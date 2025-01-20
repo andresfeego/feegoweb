@@ -3,13 +3,12 @@ langcode: es
 status: true
 dependencies:
   config:
-    - field.field.node.banner_header_image.field_icon_logo
-    - field.field.node.banner_header_image.field_image
+    - field.field.node.banner_header_image.field_icon_banner
+    - field.field.node.banner_header_image.field_image_banner
     - field.field.node.banner_header_image.field_section
-    - image.style.thumbnail
     - node.type.banner_header_image
   module:
-    - image
+    - media_library
     - path
 id: node.banner_header_image.default
 targetEntityType: node
@@ -22,21 +21,19 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_icon_logo:
-    type: image_image
+  field_icon_banner:
+    type: media_library_widget
+    weight: 123
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_image_banner:
+    type: media_library_widget
     weight: 122
     region: content
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-  field_image:
-    type: image_image
-    weight: 1
-    region: content
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      media_types: {  }
     third_party_settings: {  }
   field_section:
     type: options_select

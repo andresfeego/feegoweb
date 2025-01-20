@@ -9,7 +9,7 @@ _core:
 id: feego_sys_primary_admin_actions
 theme: feego_sys
 region: content
-weight: -6
+weight: -9
 provider: null
 plugin: local_actions_block
 settings:

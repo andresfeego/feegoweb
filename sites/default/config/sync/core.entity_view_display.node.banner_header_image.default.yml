@@ -3,39 +3,34 @@ langcode: es
 status: true
 dependencies:
   config:
-    - field.field.node.banner_header_image.field_icon_logo
-    - field.field.node.banner_header_image.field_image
+    - field.field.node.banner_header_image.field_icon_banner
+    - field.field.node.banner_header_image.field_image_banner
     - field.field.node.banner_header_image.field_section
     - node.type.banner_header_image
   module:
-    - image
     - user
 id: node.banner_header_image.default
 targetEntityType: node
 bundle: banner_header_image
 mode: default
 content:
-  field_icon_logo:
-    type: image
-    label: hidden
+  field_icon_banner:
+    type: entity_reference_entity_view
+    label: above
     settings:
-      image_link: ''
-      image_style: ''
-      image_loading:
-        attribute: lazy
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_image_banner:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
     third_party_settings: {  }
     weight: 1
-    region: content
-  field_image:
-    type: image
-    label: hidden
-    settings:
-      image_link: ''
-      image_style: ''
-      image_loading:
-        attribute: lazy
-    third_party_settings: {  }
-    weight: 0
     region: content
 hidden:
   field_section: true

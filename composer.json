@@ -44,6 +44,7 @@
         "drupal/search_autocomplete": "^3.0",
         "drupal/stable": "^2.0",
         "drupal/views_add_button": "^2.0",
+        "drupal/views_autocomplete_filters": "^2.0",
         "drupal/views_infinite_scroll": "^2.0",
         "drush/drush": "^13.3",
         "symfony/console": "^6"

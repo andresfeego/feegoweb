@@ -23,6 +23,33 @@ settings:
     -
       value: solicitudes
       label: solicitudes
+    -
+      value: servicios
+      label: Servicios
+    -
+      value: productos
+      label: Productos
+    -
+      value: modelos
+      label: Modelos
+    -
+      value: marcas
+      label: Marcas
+    -
+      value: links
+      label: Links
+    -
+      value: facturas
+      label: Facturas
+    -
+      value: equipos
+      label: Equipos
+    -
+      value: empresas
+      label: Empresas
+    -
+      value: clientes
+      label: Clientes
   allowed_values_function: ''
 module: options
 locked: false

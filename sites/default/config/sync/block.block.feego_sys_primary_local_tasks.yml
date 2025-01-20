@@ -9,7 +9,7 @@ _core:
 id: feego_sys_primary_local_tasks
 theme: feego_sys
 region: content
-weight: -5
+weight: -8
 provider: null
 plugin: local_tasks_block
 settings:
